@@ -16,8 +16,17 @@ public class GameController : ControllerBase
     [HttpGet]
     public string Get()
     {
-        string x = System.IO.File.ReadAllText(@"ClientApp\data.json");
+        string x = "";
+        try
+        {
+            x = System.IO.File.ReadAllText(@"ClientApp\data.json");
+        }
+        catch (Exception ex)
+        {
+            x = ex.Message;
+        }
 
-        return System.IO.File.ReadAllText(@"ClientApp\data.json");
+
+        return x;
     }
 }
