@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Forum from './Forum'
 import Card from './Card';
 
 export class Home extends Component {
@@ -14,8 +15,8 @@ export class Home extends Component {
 
     render() {
         let contents = this.state.loading
-        ? <p><em>Loading...</em></p>
-        : <Card advisor={this.state.game.advisors[0]} />
+            ? <p><em>Loading...</em></p>
+            : <Forum advisors={this.state.game.advisors} />
 
         return (
             <div>

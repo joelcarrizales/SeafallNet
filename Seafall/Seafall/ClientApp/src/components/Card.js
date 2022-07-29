@@ -1,4 +1,5 @@
 ﻿import React, { Component } from 'react';
+import './Card.css'
 
 export default class Card extends Component {
 
@@ -11,36 +12,46 @@ export default class Card extends Component {
     }
 
     render() {
+        let bonusList = [];
+        bonusList.push(this.renderBonus(this.state.advisor.bonus1));
+        bonusList.push(this.renderBonus(this.state.advisor.bonus2));
+        bonusList.push(this.renderBonus(this.state.advisor.bonus3));
         return (
-            <div className="card">
-                <div className="name">
-                    {this.state.advisor.name}
-                </div>
-                <div className="epithet">
-                    {this.state.advisor.epithet}
-                </div>
-                <p>
-                    {this.state.advisor.ability}
-                </p>
-                <div className="bonuses">
-                    <span>
-                        {this.state.advisor.bonus1}
-                    </span>
-                    <br />
-                    <span>
-                        {this.state.advisor.bonus2}
-                    </span>
-                    <br />
-                    <span>
-                        {this.state.advisor.bonus3}
-                    </span>
-                </div>
-                <div className="costs">
-                    {this.state.advisor.repCost}
-                    <br/>
-                    {this.state.advisor.goldCost}
+            <div className="card col advisor-card">
+                <div className="card-body">
+                    <h5 className="card-title name">
+                        {this.state.advisor.name}
+                    </h5>
+                    <h6 className="card-subtitle epithet">
+                        {this.state.advisor.epithet}
+                    </h6>
+                        <p className="card-text">
+                            {this.state.advisor.ability}
+                        </p>
+                        <div className="row align-bottom">
+                            <ul className="col-sm-9 list-group bonuses">
+                                {bonusList}
+                            </ul>
+                            <div className="col-sm-3 costs">
+                                {this.state.advisor.repCost}
+                                <br/>
+                                {this.state.advisor.goldCost}
+                            </div>
+                        </div>
                 </div>
             </div>
         );
+    }
+
+    renderBonus(bonus) {
+        if (bonus == "Open") {
+            return (<li className="list-group-item">|</li>);
+        }
+        else if (bonus != "") {
+            return (<li className="list-group-item">{bonus}</li>);
+        }
+        else {
+            return ""
+        }
     }
 }

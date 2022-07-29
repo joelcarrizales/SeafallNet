@@ -270,7 +270,7 @@
       "guild": "Explorers",
       "set": 0,
       "currentOwner": 0,
-      "status": "Hidden"
+      "status": "Available"
     },
     {
       "name": "Dora",
@@ -298,7 +298,7 @@
       "guild": "Builders",
       "set": 0,
       "currentOwner": 0,
-      "status": "Hidden"
+      "status": "Available"
     },
     {
       "name": "Noise",
@@ -438,7 +438,7 @@
       "guild": "Soldiers",
       "set": 1,
       "currentOwner": 0,
-      "status": "Hidden"
+      "status": "Available"
     },
     {
       "name": "",
@@ -620,7 +620,7 @@
       "guild": "Merchants",
       "set": 2,
       "currentOwner": 0,
-      "status": "Hidden"
+      "status": "Available"
     },
     {
       "name": "Gertrude",
@@ -802,7 +802,7 @@
       "guild": "Explorers",
       "set": 2,
       "currentOwner": 0,
-      "status": "Hidden"
+      "status": "Available"
     }
   ]
 }
