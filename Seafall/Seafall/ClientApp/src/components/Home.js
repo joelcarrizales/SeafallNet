@@ -1,28 +1,55 @@
 import React, { Component } from 'react';
 import Forum from './Forum'
-import Card from './Card';
 
 export class Home extends Component {
     static displayName = Home.name;
 
     constructor(props) {
         super(props);
-        this.state = { game: { advisors :[] }, loading: true };
+        this.state = {
+            game: { advisors: [] }, loading: true, searchText: "", filteredAdvisors: [], drawButtonClass: "btn btn-outline-light col"
+        };
     }
     componentDidMount() {
-       // this.populateGameData();
+        this.populateGameData();
+    }
+
+    findAdvisor = (event) => {
+        let tmp = [];
+        this.setState({ searchText: event.target.value.toLowerCase() },
+            () => {
+                let tmp = this.state.game.advisors.filter(adv => adv.epithet.toLowerCase().includes(this.state.searchText) || adv.name.toLowerCase().includes(this.state.searchText));
+                let tmpClass = "btn col ";
+                tmpClass += tmp.length == 1 ? "btn-outline-primary" : "btn btn-outline-light";
+                this.setState({ filteredAdvisors: tmp, drawButtonClass: tmpClass });
+            }
+        );
+    }
+
+    drawClick = () => {
+        let index = this.state.game.advisors.findIndex(adv => adv.epithet.toLowerCase().includes(this.state.searchText) || adv.name.toLowerCase().includes(this.state.searchText));
+        let tmpGame = this.state.game;
+        tmpGame.advisors[index].status = "Available"
+        this.setState({ game: tmpGame });
     }
 
     render() {
-        let contents = this.state.loading
+        let contents = this.state.loading && this.state.game != undefined && this.state.game.advisors != undefined
             ? <p><em>Loading...</em></p>
-            : <Forum advisors={this.state.game.advisors} />
-
+            : <div></div>
         return (
             <div>
-            <input type="file" id="gameFile" onChange={this.handleFileChange} />
-            <h1>Hello, world!</h1>
-            { contents }
+                <h1>Welcome to Seafall!</h1>
+                {this.state.loading || this.state.game.advisors == undefined || this.state.game.advisors.length == 0
+                    ? <input type="file" id="gameFile" className={this.state.fileHideClass} onChange={this.handleFileChange} />
+                    : <>
+                        <div className="row">
+                            <input type="text" id="advisorToDraw" name="advisorToDraw" className="col" onChange={this.findAdvisor} />
+                            <button className={this.state.drawButtonClass} onClick={this.drawClick}>Draw Advisor</button>
+                            <button className="btn btn-outline-success col" onClick={this.updateServer}>Upload State</button>
+                        </div>
+                        <Forum advisors={this.state.game.advisors} />
+                </>}
             </div>
         );
     }
@@ -30,15 +57,38 @@ export class Home extends Component {
     async populateGameData() {
         const response = await fetch('game');
         const data = await response.json();
-        this.setState({ game: data, loading: false });
+        this.setState({ game: data.Game, loading: false });
     }
 
     handleFileChange = event => {
         let input = event.target.files[0];
         let reader = new FileReader();
         reader.onloadend = (event) => {
-            this.setState({ game: JSON.parse(event.target.result), loading: false });
+            let fileContent = event.target.result;
+            if (fileContent.includes("advisors")) {
+                this.setState({ game: JSON.parse(fileContent), loading: false });
+            }
         };
         reader.readAsText(input);
     };
+
+    updateServer = async() => {
+        const response = await fetch(`game`, {
+            method: 'POST',
+            body: JSON.stringify({
+                Game: this.state.game
+            }),
+            headers: {
+                'Content-type': 'text/html; charset=UTF - 8',
+            },
+        })
+            .then((response) => response.json())
+            .then((data) => {
+                console.log(data);
+                // Handle data
+            })
+            .catch((err) => {
+                console.log(err.message);
+            });
+    }
 }

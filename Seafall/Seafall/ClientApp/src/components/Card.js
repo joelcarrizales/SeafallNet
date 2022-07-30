@@ -45,10 +45,10 @@ export default class Card extends Component {
 
     renderBonus(bonus) {
         if (bonus == "Open") {
-            return (<li className="list-group-item">|</li>);
+            return (<li key={bonus} className="list-group-item">|</li>);
         }
         else if (bonus != "") {
-            return (<li className="list-group-item">{bonus}</li>);
+            return (<li key={bonus} className="list-group-item">{bonus}</li>);
         }
         else {
             return ""

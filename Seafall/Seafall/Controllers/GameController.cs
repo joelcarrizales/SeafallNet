@@ -1,4 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Seafall.Services;
+using System.Text.Json;
 
 namespace Seafall.Controllers;
 
@@ -16,17 +18,42 @@ public class GameController : ControllerBase
     [HttpGet]
     public string Get()
     {
-        string x = "";
+        return GameService.GetGame();
+    }
+
+    [HttpPost]
+    public async Task<ActionResult> Post()
+    {
         try
         {
-            x = System.IO.File.ReadAllText(@"ClientApp\data.json");
+            string game = "";
+            using (StreamReader stream = new StreamReader(Request.Body))
+            {
+                game = await stream.ReadToEndAsync();
+            }
+            JsonDocument.Parse(game);
+            GameService.SetGame(game);
+            var x = GameService.GetGame();
+            return Accepted();
         }
-        catch (Exception ex)
+        catch
         {
-            x = ex.Message;
+            return  StatusCode(StatusCodes.Status415UnsupportedMediaType, "This endpoint requires a JSON string.");
         }
-
-
-        return x;
     }
+
+    //[Route("Game/Upload/{Game}")]
+    //public ActionResult Upload(string Game)
+    //{
+    //    try
+    //    {
+    //        JsonDocument.Parse(Game);
+    //        GameService.SetGame(Game);
+    //        return Accepted();
+    //    }
+    //    catch
+    //    {
+    //        return StatusCode(StatusCodes.Status415UnsupportedMediaType, "This endpoint requires a JSON string.");
+    //    }
+    //}
 }
