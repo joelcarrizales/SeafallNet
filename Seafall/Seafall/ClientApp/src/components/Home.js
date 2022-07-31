@@ -38,15 +38,23 @@ export class Home extends Component {
             ? <p><em>Loading...</em></p>
             : <div></div>
         return (
-            <div>
+            <div className="container">
                 <h1>Welcome to Seafall!</h1>
                 {this.state.loading || this.state.game.advisors == undefined || this.state.game.advisors.length == 0
                     ? <input type="file" id="gameFile" className={this.state.fileHideClass} onChange={this.handleFileChange} />
                     : <>
+                        {this.state.searchText == "admin" &&
+                        <div className="row">
+                            <button className="btn btn-outline-success col" onClick={this.updateServer}>Upload State</button>
+                            <button className="btn btn-outline-danger col" onClick={this.reset}>Reset State</button>
+                        </div>
+                        }
                         <div className="row">
                             <input type="text" id="advisorToDraw" name="advisorToDraw" className="col" onChange={this.findAdvisor} />
                             <button className={this.state.drawButtonClass} onClick={this.drawClick}>Draw Advisor</button>
-                            <button className="btn btn-outline-success col" onClick={this.updateServer}>Upload State</button>
+                            <select>
+                            </select>
+                            
                         </div>
                         <Forum advisors={this.state.game.advisors} />
                 </>}
@@ -90,5 +98,9 @@ export class Home extends Component {
             .catch((err) => {
                 console.log(err.message);
             });
+    }
+
+    reset = () => {
+        this.setState({ loading: true });
     }
 }
