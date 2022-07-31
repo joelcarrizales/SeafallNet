@@ -803,6 +803,62 @@
       "set": 2,
       "currentOwner": 0,
       "status": "Available"
+    },
+    {
+      "name": "Larry",
+      "epithet": "Contractor",
+      "ability": "When the Contractor becomes your active advisor, take one good from the supply and place it in your province warehouse.",
+      "bonus1": "Upgrade -2 (g)",
+      "bonus2": "Build -6 (g)",
+      "bonus3": "Upgrade -3 (g)",
+      "repCost": 2,
+      "goldCost": 6,
+      "guild": "Builders",
+      "set": 2,
+      "currentOwner": 1,
+      "status": "Ready"
+    },
+    {
+      "name": "Jacob Marlo",
+      "epithet": "Advanced Scout",
+      "ability": "You may use up to two fortune tokens at dangerous sites.",
+      "bonus1": "Raid +2 (d)",
+      "bonus2": "Explore +2 (d)",
+      "bonus3": "",
+      "repCost": 1,
+      "goldCost": 2,
+      "guild": "Soldiers",
+      "set": 0,
+      "currentOwner": 2,
+      "status": "Ready"
+    },
+    {
+      "name": "Einstein",
+      "epithet": "Master Trader",
+      "ability": "When selling goods, each earns +2 gold.",
+      "bonus1": "Sell Goods +1 (i)",
+      "bonus2": "Sell Goods +2 (i)",
+      "bonus3": "Buy Goods +1 (i)",
+      "repCost": 1,
+      "goldCost": 3,
+      "guild": "Merchants",
+      "set": 0,
+      "currentOwner": 3,
+      "status": "Ready"
+    },
+    {
+      "name": "",
+      "epithet": "Grizzled Veteran",
+      "ability": "When the Grizzled Veteran becomes your active advisor, take two fortune tokens. You may use up to 4 fortune tokens at a dangerous site.",
+      "bonus1": "Raid +2 (d)",
+      "bonus2": "Raid +3 (d)",
+      "bonus3": "Raid +2 (d)",
+      "repCost": 2,
+      "goldCost": 5,
+      "guild": "Soldiers",
+      "set": 1,
+      "currentOwner": 4,
+      "status": "Ready"
     }
   ]
 }
