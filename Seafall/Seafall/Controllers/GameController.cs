@@ -33,7 +33,6 @@ public class GameController : ControllerBase
             }
             JsonDocument.Parse(game);
             GameService.SetGame(game);
-            var x = GameService.GetGame();
             return Accepted();
         }
         catch

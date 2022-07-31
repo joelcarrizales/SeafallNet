@@ -26,10 +26,18 @@ export class Home extends Component {
         );
     }
 
-    drawClick = () => {
+    drawClick = () => { // assumes only 1 advisor that matches search text
         let index = this.state.game.advisors.findIndex(adv => adv.epithet.toLowerCase().includes(this.state.searchText) || adv.name.toLowerCase().includes(this.state.searchText));
         let tmpGame = this.state.game;
         tmpGame.advisors[index].status = "Available"
+        this.setState({ game: tmpGame });
+    }
+
+    hireAdvisor = (event) => { // assumes only 1 advisor that matches search text
+        let index = this.state.game.advisors.findIndex(adv => adv.epithet.toLowerCase().includes(this.state.searchText) || adv.name.toLowerCase().includes(this.state.searchText));
+        let tmpGame = this.state.game;
+        tmpGame.advisors[index].currentOwner = parseInt(event.target.value);
+        tmpGame.advisors[index].status = event.target.value == 0 ? "Hidden" : "Ready";
         this.setState({ game: tmpGame });
     }
 
@@ -52,7 +60,12 @@ export class Home extends Component {
                         <div className="row">
                             <input type="text" id="advisorToDraw" name="advisorToDraw" className="col" onChange={this.findAdvisor} />
                             <button className={this.state.drawButtonClass} onClick={this.drawClick}>Draw Advisor</button>
-                            <select>
+                            <select className="form-select col" aria-label="Owner" onChange={this.hireAdvisor}>
+                                <option value="0">Forum</option>
+                                <option value="1">Joey</option>
+                                <option value="2">Hannah</option>
+                                <option value="3">Zach</option>
+                                <option value="4">Pete</option>
                             </select>
                             
                         </div>
