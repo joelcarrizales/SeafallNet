@@ -33,9 +33,9 @@ export default class Card extends Component {
                                 {bonusList}
                             </ul>
                             <div className="col-sm-3 costs">
-                                {this.state.advisor.repCost}
+                                <div className="rep-cost">{this.state.advisor.repCost}</div>
                                 <br/>
-                                {this.state.advisor.goldCost}
+                                <div className="gold-cost">{this.state.advisor.goldCost}</div>
                             </div>
                         </div>
                 </div>

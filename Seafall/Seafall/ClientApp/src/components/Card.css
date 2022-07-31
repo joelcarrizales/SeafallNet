@@ -1,3 +1,24 @@
 ﻿.advisor-card div, .advisor-card p {
     font-size: 11px;
 }
+
+.row div.costs {
+    padding-right: 0;
+}
+
+.advisor-card .costs div{
+    color: white;
+    min-height: 44px;
+    font-size: 26px;
+    text-align: center;
+    text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
+    background-size: cover;
+}
+
+.advisor-card .costs .rep-cost {
+    background-image: url(../images/rep2.png);
+}
+
+.advisor-card .costs .gold-cost {
+    background-image: url(../images/gold2.png);
+}
