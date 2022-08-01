@@ -270,7 +270,7 @@
       "guild": "Explorers",
       "set": 0,
       "currentOwner": 0,
-      "status": "Available"
+      "status": "Hidden"
     },
     {
       "name": "Dora",
@@ -298,7 +298,7 @@
       "guild": "Builders",
       "set": 0,
       "currentOwner": 0,
-      "status": "Available"
+      "status": "Hidden"
     },
     {
       "name": "Noise",
@@ -438,7 +438,7 @@
       "guild": "Soldiers",
       "set": 1,
       "currentOwner": 0,
-      "status": "Available"
+      "status": "Hidden"
     },
     {
       "name": "",
@@ -620,7 +620,7 @@
       "guild": "Merchants",
       "set": 2,
       "currentOwner": 0,
-      "status": "Available"
+      "status": "Hidden"
     },
     {
       "name": "Gertrude",
@@ -802,7 +802,7 @@
       "guild": "Explorers",
       "set": 2,
       "currentOwner": 0,
-      "status": "Available"
+      "status": "Hidden"
     },
     {
       "name": "Larry",
@@ -859,6 +859,430 @@
       "set": 1,
       "currentOwner": 4,
       "status": "Ready"
+    }
+  ],
+  "Buildings": [
+    {
+      "name": "Guild Hall",
+      "quantity": 2,
+      "ability": "Before hiring advisors, pay 1 gold to dismiss/replace all advisors in the forum. You may do this multiple times",
+      "goldCost": 10,
+      "type": "wood",
+      "playerQuantity": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "enmity": 3
+    },
+    {
+      "name": "Library",
+      "quantity": 2,
+      "ability": "When hiring advisors, you may hire as many advisors from the forum as you like",
+      "goldCost": 18,
+      "type": "wood",
+      "playerQuantity": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "enmity": 4
+    },
+    {
+      "name": "Reliquary",
+      "quantity": 1,
+      "ability": "This is worth two glory for every relic you control",
+      "goldCost": 24,
+      "type": "wood",
+      "playerQuantity": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "enmity": 5
+    },
+    {
+      "name": "Museum",
+      "quantity": 1,
+      "ability": "This is worth two glory for every tablet you control",
+      "goldCost": 24,
+      "type": "wood",
+      "playerQuantity": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "enmity": 5
+    },
+    {
+      "name": "Marketplace",
+      "quantity": 1,
+      "ability": "Each good sold in this region earns +2 gold",
+      "goldCost": 10,
+      "type": "linen",
+      "playerQuantity": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "enmity": 3
+    },
+    {
+      "name": "Observatory",
+      "quantity": 1,
+      "ability": "May secretly look at the top facedown card in any deck",
+      "goldCost": 10,
+      "type": "wood",
+      "playerQuantity": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "enmity": 3
+    },
+    {
+      "name": "Bank",
+      "quantity": 1,
+      "ability": "During winter, collect 10 gold",
+      "goldCost": 18,
+      "type": "linen",
+      "playerQuantity": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "enmity": 4
+    },
+    {
+      "name": "Trading Port",
+      "quantity": 2,
+      "ability": "Each good sold in this region earns +4 gold",
+      "goldCost": 10,
+      "type": "linen",
+      "playerQuantity": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "enmity": 4
+    },
+    {
+      "name": "Port",
+      "quantity": 2,
+      "ability": "Remove all damage cards from ships that end a sail order in this region",
+      "goldCost": 10,
+      "type": "spice",
+      "playerQuantity": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "enmity": 3
+    },
+    {
+      "name": "Lighthouse",
+      "quantity": 1,
+      "ability": "Keep a played research card for every strong success you roll when exploring",
+      "goldCost": 18,
+      "type": "spice",
+      "playerQuantity": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "enmity": 4
+    },
+    {
+      "name": "Gun Tower",
+      "quantity": 3,
+      "ability": "Plus 1 garrison for this region",
+      "goldCost": 10,
+      "type": "iron",
+      "playerQuantity": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "enmity": 3
+    },
+    {
+      "name": "Heavy Guns",
+      "quantity": 2,
+      "ability": "Plus 2 garrison for this region",
+      "goldCost": 18,
+      "type": "iron",
+      "playerQuantity": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "enmity": 4
+    },
+    {
+      "name": "Cold Iron Altar",
+      "quantity": 1,
+      "ability": "Remove curse cards whenever you remove damage cards",
+      "goldCost": 18,
+      "type": "iron",
+      "playerQuantity": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "enmity": 4
+    }
+  ],
+  "upgrades": [
+    {
+      "name": "Hale",
+      "quantity": 1,
+      "ability": "+1 to Hold",
+      "goldCost": 10,
+      "type": "wood",
+      "playerQuantity": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "shipQuantity": {
+        "A": 0,
+        "B": 0
+      }
+    },
+    {
+      "name": "Enduring",
+      "quantity": 1,
+      "ability": "If the flagship, every strong success rolled in an endeavor reduces damage by 1",
+      "goldCost": 10,
+      "type": "wood",
+      "playerQuantity": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "shipQuantity": {
+        "A": 0,
+        "B": 0
+      }
+    },
+    {
+      "name": "Glorious",
+      "quantity": 1,
+      "ability": "Gain 1 glory every winter",
+      "goldCost": 10,
+      "type": "wood",
+      "playerQuantity": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "shipQuantity": {
+        "A": 0,
+        "B": 0
+      }
+    },
+    {
+      "name": "Stalwart",
+      "quantity": 1,
+      "ability": "+2 to Hold",
+      "goldCost": 18,
+      "type": "wood",
+      "playerQuantity": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "shipQuantity": {
+        "A": 0,
+        "B": 0
+      }
+    },
+    {
+      "name": "Swift",
+      "quantity": 1,
+      "ability": "+1 to Sail",
+      "goldCost": 10,
+      "type": "linen",
+      "playerQuantity": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "shipQuantity": {
+        "A": 0,
+        "B": 0
+      }
+    },
+    {
+      "name": "Nimble",
+      "quantity": 1,
+      "ability": "Add 1 extra die when a support ship",
+      "goldCost": 10,
+      "type": "linen",
+      "playerQuantity": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "shipQuantity": {
+        "A": 0,
+        "B": 0
+      }
+    },
+    {
+      "name": "Blessed",
+      "quantity": 1,
+      "ability": "Gain two fortune tokens every winter",
+      "goldCost": 10,
+      "type": "linen",
+      "playerQuantity": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "shipQuantity": {
+        "A": 0,
+        "B": 0
+      }
+    },
+    {
+      "name": "Spirited",
+      "quantity": 2,
+      "ability": "+2 to Sail",
+      "goldCost": 18,
+      "type": "linen",
+      "playerQuantity": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "shipQuantity": {
+        "A": 0,
+        "B": 0
+      }
+    },
+    {
+      "name": "Bold",
+      "quantity": 1,
+      "ability": "+1 to Explore",
+      "goldCost": 10,
+      "type": "spice",
+      "playerQuantity": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "shipQuantity": {
+        "A": 0,
+        "B": 0
+      }
+    },
+    {
+      "name": "Cunning",
+      "quantity": 1,
+      "ability": "If the flagship, may use up to two fortune tokens at dangerous sites",
+      "goldCost": 10,
+      "type": "spice",
+      "playerQuantity": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "shipQuantity": {
+        "A": 0,
+        "B": 0
+      }
+    },
+    {
+      "name": "Intrepid",
+      "quantity": 2,
+      "ability": "+2 to Explore",
+      "goldCost": 18,
+      "type": "spice",
+      "playerQuantity": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "shipQuantity": {
+        "A": 0,
+        "B": 0
+      }
+    },
+    {
+      "name": "Fearless",
+      "quantity": 1,
+      "ability": "May take 1 damage when a support ship",
+      "goldCost": 10,
+      "type": "iron",
+      "playerQuantity": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "shipQuantity": {
+        "A": 0,
+        "B": 0
+      }
+    },
+    {
+      "name": "Terrible",
+      "quantity": 1,
+      "ability": "+1 to Raid",
+      "goldCost": 10,
+      "type": "iron",
+      "playerQuantity": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "shipQuantity": {
+        "A": 0,
+        "B": 0
+      }
+    },
+    {
+      "name": "Deadly",
+      "quantity": 2,
+      "ability": "+2 to Raid",
+      "goldCost": 18,
+      "type": "iron",
+      "playerQuantity": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "shipQuantity": {
+        "A": 0,
+        "B": 0
+      }
     }
   ]
 }
