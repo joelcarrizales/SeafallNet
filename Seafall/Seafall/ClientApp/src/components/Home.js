@@ -66,13 +66,19 @@ export class Home extends Component {
                                     {this.state.game.upgrades.filter(up => up.type === "wood").map(up => <Upgrade key={up.name} upgrade={up} action={this.editUpgrade} />)}
                                 </td>
                                 <td>
+                                    {this.state.game.upgrades.filter(up => up.type === "linen").map(up => <Upgrade key={up.name} upgrade={up} action={this.editUpgrade} />)}
                                 </td>
                             </tr>
                             <tr>
                                 <td></td><td></td>
                             </tr>
                             <tr>
-                                <td></td><td></td>
+                                <td>
+                                    {this.state.game.upgrades.filter(up => up.type === "spice").map(up => <Upgrade key={up.name} upgrade={up} action={this.editUpgrade} />)}
+                                </td>
+                                <td>
+                                    {this.state.game.upgrades.filter(up => up.type === "iron").map(up => <Upgrade key={up.name} upgrade={up} action={this.editUpgrade} />)}
+                                </td>
                             </tr>
                             <tr>
                                 <td></td><td></td>

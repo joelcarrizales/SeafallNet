@@ -23,6 +23,22 @@
     background-color:bisque;
 }
 
+.upgrade.linen {
+    border-left: inset 8px #d0d0d0;
+    background-color: #e5e5e5;
+}
+
+.upgrade.spice {
+    border-left: solid 8px #c8c810;
+    background-color: #f4f7b0;
+}
+
+.upgrade.iron {
+    border-left: solid 8px #111111;
+    background-color: #777777;
+    color: white;
+}
+
 div.upgrade.empty {
     background-color: #fdfdfd;
     color: black;

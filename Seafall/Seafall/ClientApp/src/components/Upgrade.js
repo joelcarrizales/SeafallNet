@@ -13,6 +13,7 @@ export default class Upgrade extends Component {
     render() {
         const classes = "upgrade " + this.state.upgrade.type + (this.state.upgrade.quantity == 0 ? " empty" : "");
         const muchText = this.state.upgrade.ability.length > 50 ? "font-small" : "";
+        const btnClasses = "btn btn-sm btn-outline-" + (this.state.upgrade.type === "iron" ? "light" : "secondary");
 
         return (
             <div className={classes}>
@@ -20,8 +21,8 @@ export default class Upgrade extends Component {
                 <p className={muchText}>{this.state.upgrade.ability}</p>
                 <div className="quantity">
                     x{this.state.upgrade.quantity}
-                    <button className="btn btn-outline-danger btn-sm" onClick={() => this.props.action(this.state.upgrade.name, this.state.upgrade.quantity-1)}>-</button>
-                    <button className="btn btn-outline-danger btn-sm" onClick={() => this.props.action(this.state.upgrade.name, this.state.upgrade.quantity+1)}>+</button>
+                    <button className={btnClasses} onClick={() => this.props.action(this.state.upgrade.name, this.state.upgrade.quantity-1)}>-</button>
+                    <button className={btnClasses} onClick={() => this.props.action(this.state.upgrade.name, this.state.upgrade.quantity+1)}>+</button>
                 </div>
                 <div className="gold-cost">{this.state.upgrade.goldCost}</div>
                {/* <div class="wrap">{this.state.upgrade.ability}
