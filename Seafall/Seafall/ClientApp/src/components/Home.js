@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Forum from './Forum'
+import Upgrade from './Upgrade';
 
 export class Home extends Component {
     static displayName = Home.name;
@@ -48,10 +49,28 @@ export class Home extends Component {
         return (
             <div className="container">
                 <h1>Welcome to Seafall!</h1>
-                {this.state.loading || this.state.game.advisors == undefined || this.state.game.advisors.length == 0
+                {this.state.loading || this.state.game.advisors === undefined || this.state.game.advisors.length === 0
                     ? <input type="file" id="gameFile" className={this.state.fileHideClass} onChange={this.handleFileChange} />
                     : <>
-                        {this.state.searchText == "admin" &&
+                        <table>
+                            <tr>
+                                <td>
+                                    {this.state.game.upgrades.filter(up => up.type === "wood").map(up => <Upgrade key={up.name} upgrade={up} />)}
+                                </td>
+                                <td>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td><td></td>
+                            </tr>
+                            <tr>
+                                <td></td><td></td>
+                            </tr>
+                            <tr>
+                                <td></td><td></td>
+                            </tr>
+                        </table>
+                        {this.state.searchText === "admin" &&
                         <div className="row">
                             <button className="btn btn-outline-success col" onClick={this.updateServer}>Upload State</button>
                             <button className="btn btn-outline-danger col" onClick={this.reset}>Reset State</button>
