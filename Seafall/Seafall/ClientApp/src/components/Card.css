@@ -1,5 +1,17 @@
-﻿.advisor-card div, .advisor-card p {
+﻿.advisor-card {
+    background: #fffbee;
+}
+
+.advisor-card div, .advisor-card p {
     font-size: 11px;
+}
+
+.advisor-card p {
+    height: 69px;
+}
+
+.advisor-card .list-group-item{
+    background: rgba(255,255,255,.7);
 }
 
 .row div.costs {

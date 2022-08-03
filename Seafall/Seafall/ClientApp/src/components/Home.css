@@ -2,6 +2,7 @@
     width: 50%;
 }
 
-.spacer {
-    margin-bottom: 128px;
+.footer {
+    margin-top: 128px;
+    text-align: right;
 }

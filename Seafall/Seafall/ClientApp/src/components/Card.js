@@ -7,20 +7,19 @@ export default class Card extends Component {
         super(props);
         this.state = {
             advisor: this.props.advisor
-            //{ name: "", epithet: "", ability: "", bonus1: "", bonus2: "", bonus3: "", repCost: 0, goldCost: 0,guild: "",set: 0,currentOwner: 0,status: "Available" }
         }
     }
 
     render() {
         let bonusList = [];
-        bonusList.push(this.renderBonus(this.state.advisor.bonus1));
-        bonusList.push(this.renderBonus(this.state.advisor.bonus2));
-        bonusList.push(this.renderBonus(this.state.advisor.bonus3));
+        bonusList.push(this.renderBonus(this.state.advisor.bonus1, "b1"));
+        bonusList.push(this.renderBonus(this.state.advisor.bonus2, "b2"));
+        bonusList.push(this.renderBonus(this.state.advisor.bonus3, "b3"));
         return (
             <div className="card col advisor-card">
                 <div className="card-body">
                     <h5 className="card-title name">
-                        {this.state.advisor.name}
+                        {this.state.advisor.name === "" ? "|" : this.state.advisor.name}
                     </h5>
                     <h6 className="card-subtitle epithet">
                         {this.state.advisor.epithet}
@@ -43,11 +42,11 @@ export default class Card extends Component {
         );
     }
 
-    renderBonus(bonus) {
-        if (bonus == "Open") {
-            return (<li key={bonus} className="list-group-item">|</li>);
+    renderBonus(bonus, key) {
+        if (bonus === "Open") {
+            return (<li key={key} className="list-group-item">|</li>);
         }
-        else if (bonus != "") {
+        else if (bonus !== "") {
             return (<li key={bonus} className="list-group-item">{bonus}</li>);
         }
         else {

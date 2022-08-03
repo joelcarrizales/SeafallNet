@@ -124,7 +124,7 @@ export class Home extends Component {
                         </div>
                         <Forum advisors={this.state.game.advisors} />
                     </>}
-                <div className="spacer"></div>
+                <div className="footer">Created by The Better Sister Inc.</div>
             </div>
         );
     }
