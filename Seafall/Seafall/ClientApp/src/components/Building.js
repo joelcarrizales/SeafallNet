@@ -35,7 +35,7 @@ export default class Buliding extends Component {
                             <button className={btnClasses} onClick={() => this.props.action(this.state.building.name, this.state.building.quantity + 1)}>+</button>
                         </div>
                     </div>
-                    <div class="right col">
+                    <div className="right col">
                         <div className="gold-cost">{this.state.building.goldCost}</div>
                     </div>
                 </div>

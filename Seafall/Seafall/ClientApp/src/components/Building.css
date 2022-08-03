@@ -42,14 +42,9 @@
     font-size: 10px;
 }
 
-.building.wood .top {
+.building.wood .top, .building.wood .right{
     background: #8f4936;
 }
-
-.building.wood .right {
-    background: #8f4936;
-}
-
 .building.wood h5 {
     color: white;
 }
@@ -57,18 +52,35 @@
     background-color: bisque;
 }
 
+.building.linen .top, .building.linen .right {
+    background: #d0d0d0;
+}
+.building.linen h5 {
+    color: black;
+}
 .building.linen {
-    border-left: inset 8px #d0d0d0;
     background-color: #e5e5e5;
 }
 
+
+.building.spice .top, .building.spice .right {
+    background: #c8c810;
+}
+.building.spice h5 {
+    color: black;
+}
 .building.spice {
-    border-left: solid 8px #c8c810;
     background-color: #f4f7b0;
 }
 
+.building.iron .top, .building.iron .right {
+    background: #111111;
+}
+
+.building.spice h5 {
+    color: black;
+}
 .building.iron {
-    border-left: solid 8px #111111;
     background-color: #777777;
     color: white;
 }

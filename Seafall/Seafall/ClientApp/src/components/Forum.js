@@ -10,7 +10,7 @@ export default class Forum extends Component {
     }
 
     render() {
-        let availableAdvisors = this.state.advisors.filter(a => a.status == "Available").map(a => <Card key={a.epithet} advisor={a} />); 
+        let availableAdvisors = this.state.advisors.filter(a => a.status === "Available").map(a => <Card key={a.epithet} advisor={a} />); 
 
         return (
             <div className="row">

@@ -83,6 +83,7 @@ export class Home extends Component {
                                     {this.state.game.buildings.filter(bu => bu.type === "wood").map(bu => <Building key={bu.name} building={bu} action={this.editBuilding} />)}
                                 </td>
                                 <td>
+                                    {this.state.game.buildings.filter(bu => bu.type === "linen").map(bu => <Building key={bu.name} building={bu} action={this.editBuilding} />)}
                                 </td>
                             </tr>
                             <tr>
@@ -95,10 +96,12 @@ export class Home extends Component {
                             </tr>
                             <tr>
                                 <td>
+                                    {this.state.game.buildings.filter(bu => bu.type === "spice").map(bu => <Building key={bu.name} building={bu} action={this.editBuilding} />)}
                                 </td>
-                                <td>
+                                 <td>
+                                    {this.state.game.buildings.filter(bu => bu.type === "iron").map(bu => <Building key={bu.name} building={bu} action={this.editBuilding} />)}
                                 </td>
-                                </tr>
+                            </tr>
                             </tbody>
                         </table>
                         {this.state.searchText === "admin" &&
@@ -120,7 +123,8 @@ export class Home extends Component {
                             
                         </div>
                         <Forum advisors={this.state.game.advisors} />
-                </>}
+                    </>}
+                <div className="spacer"></div>
             </div>
         );
     }
