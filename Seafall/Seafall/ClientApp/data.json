@@ -861,7 +861,7 @@
       "status": "Ready"
     }
   ],
-  "Buildings": [
+  "buildings": [
     {
       "name": "Guild Hall",
       "quantity": 2,
@@ -1099,7 +1099,7 @@
     },
     {
       "name": "Stalwart",
-      "quantity": 1,
+      "quantity": 2,
       "ability": "+2 to Hold",
       "goldCost": 18,
       "type": "wood",

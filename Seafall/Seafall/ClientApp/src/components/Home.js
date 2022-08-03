@@ -42,6 +42,13 @@ export class Home extends Component {
         this.setState({ game: tmpGame });
     }
 
+    editUpgrade = (name, quantity) => {
+        let index = this.state.game.upgrades.findIndex(up => up.name === name);
+        let tmpGame = this.state.game;
+        tmpGame.upgrades[index].quantity = quantity;
+        this.setState({ game: tmpGame });
+    }
+
     render() {
         let contents = this.state.loading && this.state.game != undefined && this.state.game.advisors != undefined
             ? <p><em>Loading...</em></p>
@@ -53,9 +60,10 @@ export class Home extends Component {
                     ? <input type="file" id="gameFile" className={this.state.fileHideClass} onChange={this.handleFileChange} />
                     : <>
                         <table>
+                            <tbody>
                             <tr>
                                 <td>
-                                    {this.state.game.upgrades.filter(up => up.type === "wood").map(up => <Upgrade key={up.name} upgrade={up} />)}
+                                    {this.state.game.upgrades.filter(up => up.type === "wood").map(up => <Upgrade key={up.name} upgrade={up} action={this.editUpgrade} />)}
                                 </td>
                                 <td>
                                 </td>
@@ -68,7 +76,8 @@ export class Home extends Component {
                             </tr>
                             <tr>
                                 <td></td><td></td>
-                            </tr>
+                                </tr>
+                            </tbody>
                         </table>
                         {this.state.searchText === "admin" &&
                         <div className="row">
