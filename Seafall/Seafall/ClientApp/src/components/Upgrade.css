@@ -1,0 +1,66 @@
+﻿.upgrade {
+    width: 150px;
+    height: 150px;
+    float: left;
+}
+
+.upgrade h5 {
+    padding: 0 0 0 8px;
+}
+
+.upgrade p {
+    height: 74px;
+    margin-bottom: 0;
+    padding: 0 0 0 8px;
+}
+
+.upgrade p.font-small {
+    font-size: 12px;
+}
+
+.upgrade.wood {
+    border-left: solid 8px #8f4936;
+    background-color:bisque;
+}
+
+.upgrade.linen {
+    border-left: inset 8px #d0d0d0;
+    background-color: #e5e5e5;
+}
+
+.upgrade.spice {
+    border-left: solid 8px #c8c810;
+    background-color: #f4f7b0;
+}
+
+.upgrade.iron {
+    border-left: solid 8px #111111;
+    background-color: #777777;
+    color: white;
+}
+
+div.upgrade.empty {
+    background-color: #fdfdfd;
+    color: black;
+}
+
+.upgrade .quantity {
+    float: left;
+}
+
+.upgrade .quantity button {
+    margin: 4px 0 0 8px;
+}
+
+.upgrade .gold-cost {
+    color: white;
+    min-height: 44px;
+    max-width: 44px;
+    width: 44px;
+    font-size: 26px;
+    text-align: center;
+    text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
+    background-size: cover;
+    background-image: url(../images/gold3.png);
+    float: right;
+}

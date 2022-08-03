@@ -861,7 +861,7 @@
       "status": "Ready"
     }
   ],
-  "Buildings": [
+  "buildings": [
     {
       "name": "Guild Hall",
       "quantity": 2,
@@ -937,7 +937,7 @@
       "quantity": 1,
       "ability": "May secretly look at the top facedown card in any deck",
       "goldCost": 10,
-      "type": "wood",
+      "type": "linen",
       "playerQuantity": {
         "1": 0,
         "2": 0,
@@ -1099,7 +1099,7 @@
     },
     {
       "name": "Stalwart",
-      "quantity": 1,
+      "quantity": 2,
       "ability": "+2 to Hold",
       "goldCost": 18,
       "type": "wood",

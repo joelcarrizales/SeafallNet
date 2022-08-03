@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import Forum from './Forum'
+import Upgrade from './Upgrade';
+import Building from './Building';
+import './Home.css'
 
 export class Home extends Component {
     static displayName = Home.name;
@@ -41,6 +44,20 @@ export class Home extends Component {
         this.setState({ game: tmpGame });
     }
 
+    editUpgrade = (name, quantity) => {
+        let index = this.state.game.upgrades.findIndex(up => up.name === name);
+        let tmpGame = this.state.game;
+        tmpGame.upgrades[index].quantity = quantity;
+        this.setState({ game: tmpGame });
+    }
+
+    editBuilding = (name, quantity) => {
+        let index = this.state.game.buildings.findIndex(bu => bu.name === name);
+        let tmpGame = this.state.game;
+        tmpGame.buildings[index].quantity = quantity;
+        this.setState({ game: tmpGame });
+    }
+
     render() {
         let contents = this.state.loading && this.state.game != undefined && this.state.game.advisors != undefined
             ? <p><em>Loading...</em></p>
@@ -48,10 +65,46 @@ export class Home extends Component {
         return (
             <div className="container">
                 <h1>Welcome to Seafall!</h1>
-                {this.state.loading || this.state.game.advisors == undefined || this.state.game.advisors.length == 0
+                {this.state.loading || this.state.game.advisors === undefined || this.state.game.advisors.length === 0
                     ? <input type="file" id="gameFile" className={this.state.fileHideClass} onChange={this.handleFileChange} />
                     : <>
-                        {this.state.searchText == "admin" &&
+                        <table>
+                            <tbody>
+                            <tr>
+                                <td>
+                                    {this.state.game.upgrades.filter(up => up.type === "wood").map(up => <Upgrade key={up.name} upgrade={up} action={this.editUpgrade} />)}
+                                </td>
+                                <td>
+                                    {this.state.game.upgrades.filter(up => up.type === "linen").map(up => <Upgrade key={up.name} upgrade={up} action={this.editUpgrade} />)}
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    {this.state.game.buildings.filter(bu => bu.type === "wood").map(bu => <Building key={bu.name} building={bu} action={this.editBuilding} />)}
+                                </td>
+                                <td>
+                                    {this.state.game.buildings.filter(bu => bu.type === "linen").map(bu => <Building key={bu.name} building={bu} action={this.editBuilding} />)}
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    {this.state.game.upgrades.filter(up => up.type === "spice").map(up => <Upgrade key={up.name} upgrade={up} action={this.editUpgrade} />)}
+                                </td>
+                                <td>
+                                    {this.state.game.upgrades.filter(up => up.type === "iron").map(up => <Upgrade key={up.name} upgrade={up} action={this.editUpgrade} />)}
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    {this.state.game.buildings.filter(bu => bu.type === "spice").map(bu => <Building key={bu.name} building={bu} action={this.editBuilding} />)}
+                                </td>
+                                 <td>
+                                    {this.state.game.buildings.filter(bu => bu.type === "iron").map(bu => <Building key={bu.name} building={bu} action={this.editBuilding} />)}
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        {this.state.searchText === "admin" &&
                         <div className="row">
                             <button className="btn btn-outline-success col" onClick={this.updateServer}>Upload State</button>
                             <button className="btn btn-outline-danger col" onClick={this.reset}>Reset State</button>
@@ -70,7 +123,8 @@ export class Home extends Component {
                             
                         </div>
                         <Forum advisors={this.state.game.advisors} />
-                </>}
+                    </>}
+                <div className="spacer"></div>
             </div>
         );
     }
