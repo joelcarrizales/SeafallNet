@@ -937,7 +937,7 @@
       "quantity": 1,
       "ability": "May secretly look at the top facedown card in any deck",
       "goldCost": 10,
-      "type": "wood",
+      "type": "linen",
       "playerQuantity": {
         "1": 0,
         "2": 0,

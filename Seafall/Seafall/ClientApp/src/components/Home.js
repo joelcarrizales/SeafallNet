@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Forum from './Forum'
 import Upgrade from './Upgrade';
+import Building from './Building';
+import './Home.css'
 
 export class Home extends Component {
     static displayName = Home.name;
@@ -49,6 +51,13 @@ export class Home extends Component {
         this.setState({ game: tmpGame });
     }
 
+    editBuilding = (name, quantity) => {
+        let index = this.state.game.buildings.findIndex(bu => bu.name === name);
+        let tmpGame = this.state.game;
+        tmpGame.buildings[index].quantity = quantity;
+        this.setState({ game: tmpGame });
+    }
+
     render() {
         let contents = this.state.loading && this.state.game != undefined && this.state.game.advisors != undefined
             ? <p><em>Loading...</em></p>
@@ -70,7 +79,11 @@ export class Home extends Component {
                                 </td>
                             </tr>
                             <tr>
-                                <td></td><td></td>
+                                <td>
+                                    {this.state.game.buildings.filter(bu => bu.type === "wood").map(bu => <Building key={bu.name} building={bu} action={this.editBuilding} />)}
+                                </td>
+                                <td>
+                                </td>
                             </tr>
                             <tr>
                                 <td>
@@ -81,7 +94,10 @@ export class Home extends Component {
                                 </td>
                             </tr>
                             <tr>
-                                <td></td><td></td>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
                                 </tr>
                             </tbody>
                         </table>

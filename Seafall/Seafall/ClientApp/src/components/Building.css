@@ -1,2 +1,102 @@
-﻿body {
+﻿.building {
+    width: 150px;
+    height: 150px;
+    float: left;
+}
+
+.building .top {
+    border-bottom: groove 4px #442525;
+}
+
+.building h5 {
+    margin-bottom: 2px;
+    padding: 0 0 0 8px;
+}
+
+.building .left {
+    padding: 0;
+    width: 135px;
+    height: 120px;
+    float: left;
+}
+
+.building .right {
+    width: 15px;
+    height: 120px;
+    padding: 0;
+    float: right;
+    border-left: groove 4px #442525;
+}
+
+.building p {
+    height: 76px;
+    margin-bottom: 0;
+    padding: 0 0 0 8px;
+}
+
+.building p.font-small {
+    font-size: 12px;
+}
+
+.building p.font-tiny {
+    font-size: 10px;
+}
+
+.building.wood .top {
+    background: #8f4936;
+}
+
+.building.wood .right {
+    background: #8f4936;
+}
+
+.building.wood h5 {
+    color: white;
+}
+.building.wood {
+    background-color: bisque;
+}
+
+.building.linen {
+    border-left: inset 8px #d0d0d0;
+    background-color: #e5e5e5;
+}
+
+.building.spice {
+    border-left: solid 8px #c8c810;
+    background-color: #f4f7b0;
+}
+
+.building.iron {
+    border-left: solid 8px #111111;
+    background-color: #777777;
+    color: white;
+}
+
+div.building.empty {
+    background-color: #fdfdfd;
+    color: black;
+}
+
+.building .quantity {
+    float: left;
+    padding: 0 0 0 4px
+}
+
+.building .quantity button {
+    margin: 4px 0 0 8px;
+}
+
+.building .gold-cost {
+    min-height: 44px;
+    max-width: 44px;
+    width: 44px;
+    margin-top: 75px;
+    color: white;
+    font-size: 26px;
+    text-align: center;
+    text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
+    background-size: cover;
+    background-image: url(../images/gold3.png);
+    float: right;
 }
