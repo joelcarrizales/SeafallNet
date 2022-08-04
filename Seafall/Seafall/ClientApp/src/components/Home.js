@@ -41,7 +41,7 @@ export class Home extends Component {
         let tmpGame = this.state.game;
         tmpGame.advisors[index].currentOwner = parseInt(event.target.value);
         tmpGame.advisors[index].status = event.target.value == 0 ? "Hidden" : "Ready";
-        this.setState({ game: tmpGame });
+        this.setState({ game: tmpGame }, ()=> event.target.value = "");
     }
 
     editUpgrade = (name, quantity) => {
@@ -104,16 +104,17 @@ export class Home extends Component {
                             </tr>
                             </tbody>
                         </table>
-                        {this.state.searchText === "admin" &&
                         <div className="row">
                             <button className="btn btn-outline-success col" onClick={this.updateServer}>Upload State</button>
-                            <button className="btn btn-outline-danger col" onClick={this.reset}>Reset State</button>
+                            {this.state.searchText === "admin" &&
+                                <button className="btn btn-outline-danger col" onClick={this.reset}>Reset State</button>
+                            }
                         </div>
-                        }
                         <div className="row">
                             <input type="text" id="advisorToDraw" name="advisorToDraw" className="col" onChange={this.findAdvisor} />
                             <button className={this.state.drawButtonClass} onClick={this.drawClick}>Draw Advisor</button>
                             <select className="form-select col" aria-label="Owner" onChange={this.hireAdvisor}>
+                                <option> </option>
                                 <option value="0">Forum</option>
                                 <option value="1">Joey</option>
                                 <option value="2">Hannah</option>
@@ -124,7 +125,7 @@ export class Home extends Component {
                         </div>
                         <Forum advisors={this.state.game.advisors} />
                     </>}
-                <div className="footer">Created by The Better Sister Inc.</div>
+                <div className="footer">Version 1.5.2</div>
             </div>
         );
     }
