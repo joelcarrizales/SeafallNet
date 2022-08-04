@@ -46,8 +46,8 @@
       "glory": 0,
       "guild": "Explorers",
       "set": 3,
-      "currentOwner": 0,
-      "status": "Hidden"
+      "currentOwner": 3,
+      "status": "Ready"
     },
     {
       "name": "Connecticut Jane",
@@ -541,8 +541,8 @@
       "glory": 0,
       "guild": "Explorers",
       "set": 1,
-      "currentOwner": 0,
-      "status": "Hidden"
+      "currentOwner": 2,
+      "status": "Ready"
     },
     {
       "name": "Moron McStupid",
@@ -871,8 +871,8 @@
       "glory": 0,
       "guild": "Builders",
       "set": 2,
-      "currentOwner": 1,
-      "status": "Ready"
+      "currentOwner": 0,
+      "status": "Hidden"
     },
     {
       "name": "Jacob Marlo",
@@ -886,8 +886,8 @@
       "glory": 0,
       "guild": "Soldiers",
       "set": 0,
-      "currentOwner": 2,
-      "status": "Ready"
+      "currentOwner": 0,
+      "status": "Hidden"
     },
     {
       "name": "Einstein",
@@ -901,8 +901,8 @@
       "glory": 0,
       "guild": "Merchants",
       "set": 0,
-      "currentOwner": 3,
-      "status": "Ready"
+      "currentOwner": 0,
+      "status": "Hidden"
     },
     {
       "name": "Tobias",
@@ -932,7 +932,7 @@
       "guild": "Soldiers",
       "set": 4,
       "currentOwner": 0,
-      "status": "Available"
+      "status": "Hidden"
     },
     {
       "name": "",
@@ -947,7 +947,7 @@
       "guild": "Soldiers",
       "set": 4,
       "currentOwner": 0,
-      "status": "Available"
+      "status": "Hidden"
     },
     {
       "name": "",
@@ -962,7 +962,7 @@
       "guild": "Soldiers",
       "set": 4,
       "currentOwner": 0,
-      "status": "Available"
+      "status": "Hidden"
     },
     {
       "name": "",
@@ -977,7 +977,7 @@
       "guild": "Merchants",
       "set": 4,
       "currentOwner": 0,
-      "status": "Available"
+      "status": "Hidden"
     },
     {
       "name": "",
@@ -992,7 +992,7 @@
       "guild": "Builders",
       "set": 4,
       "currentOwner": 0,
-      "status": "Available"
+      "status": "Hidden"
     },
     {
       "name": "",
@@ -1007,7 +1007,7 @@
       "guild": "Soldiers",
       "set": 4,
       "currentOwner": 0,
-      "status": "Available"
+      "status": "Hidden"
     }
   ],
   "buildings": [
