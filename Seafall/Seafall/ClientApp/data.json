@@ -35,12 +35,12 @@
   ],
   "advisors": [
     {
-      "name": "",
+      "name": "L.C.",
       "epithet": "Archaeologist (m)",
       "ability": "+2 dice to any endeavor made in a tomb.",
       "bonus1": "Explore +2 (d)",
       "bonus2": "Research +2 (c)",
-      "bonus3": "Open",
+      "bonus3": "Research +1 (c)",
       "repCost": 1,
       "goldCost": 4,
       "guild": "Explorers",
@@ -348,7 +348,7 @@
       "ability": "Each success in a raid on a ship that causes damage causes an extra damage. Enmity is still based on successes.",
       "bonus1": "Raid +2 (d)",
       "bonus2": "Tax +1 (g)",
-      "bonus3": "Open",
+      "bonus3": "Raid +3 (d)",
       "repCost": 1,
       "goldCost": 4,
       "guild": "Soldiers",
@@ -501,8 +501,8 @@
       "epithet": "Bosun",
       "ability": "At the end of your turn, before exausting the Bosun, refresh any advisor in your council room.",
       "bonus1": "Explore +1 (d)",
-      "bonus2": "Open",
-      "bonus3": "Open",
+      "bonus2": "Build -3 (g)",
+      "bonus3": "",
       "repCost": 1,
       "goldCost": 3,
       "guild": "Explorers",
@@ -528,11 +528,11 @@
       "name": "Mora Books",
       "epithet": "Historian",
       "ability": "When you research, keep 1 extra card.",
-      "bonus1": "Explore +2",
-      "bonus2": "Research +2",
+      "bonus1": "Research +2 (c)",
+      "bonus2": "Explore +3 (d)",
       "bonus3": "Open",
-      "repCost": 1,
-      "goldCost": 4,
+      "repCost": 2,
+      "goldCost": 5,
       "guild": "Explorers",
       "set": 1,
       "currentOwner": 0,
@@ -847,7 +847,7 @@
       "status": "Ready"
     },
     {
-      "name": "",
+      "name": "Tobias",
       "epithet": "Grizzled Veteran",
       "ability": "When the Grizzled Veteran becomes your active advisor, take two fortune tokens. You may use up to 4 fortune tokens at a dangerous site.",
       "bonus1": "Raid +2 (d)",
@@ -859,6 +859,90 @@
       "set": 1,
       "currentOwner": 4,
       "status": "Ready"
+    },
+    {
+      "name": "",
+      "epithet": "Bloodthirsty Scoundrel",
+      "ability": "At the end of your turn, before exhausting the Bloodthirsty Scoundrel, take back two of your enmity tokens.",
+      "bonus1": "Raid +2 (d)",
+      "bonus2": "",
+      "bonus3": "",
+      "repCost": -1,
+      "goldCost": 8,
+      "guild": "Soldiers",
+      "set": 4,
+      "currentOwner": 0,
+      "status": "Available"
+    },
+    {
+      "name": "",
+      "epithet": "Arsonist",
+      "ability": "Gain one additional glory after any raid endeavor in which you plunder a structure.",
+      "bonus1": "Raid +3 (d)",
+      "bonus2": "",
+      "bonus3": "",
+      "repCost": -1,
+      "goldCost": 6,
+      "guild": "Soldiers",
+      "set": 4,
+      "currentOwner": 0,
+      "status": "Available"
+    },
+    {
+      "name": "",
+      "epithet": "Master of Munitions",
+      "ability": "Additional +4 raid when raiding a colony.",
+      "bonus1": "Raid +2 (d)",
+      "bonus2": "",
+      "bonus3": "",
+      "repCost": -1,
+      "goldCost": 6,
+      "guild": "Soldiers",
+      "set": 4,
+      "currentOwner": 0,
+      "status": "Available"
+    },
+    {
+      "name": "",
+      "epithet": "Master Smuggler",
+      "ability": "If you buy goods, they are free. Roll dice equal to goods bought. For each blank and weak success, place an enmity token on a site you bought from.",
+      "bonus1": "Buy Goods +2 (i)",
+      "bonus2": "Sell Goods +2 (i)",
+      "bonus3": "",
+      "repCost": -1,
+      "goldCost": 8,
+      "guild": "Merchants",
+      "set": 4,
+      "currentOwner": 0,
+      "status": "Available"
+    },
+    {
+      "name": "",
+      "epithet": "Tinker",
+      "ability": "After a sail action, you may remove one damage card from each of your ships.",
+      "bonus1": "Build -6 (g)",
+      "bonus2": "Raid +2 (d)",
+      "bonus3": "Upgrade -4 (g)",
+      "repCost": -1,
+      "goldCost": 6,
+      "guild": "Builders",
+      "set": 4,
+      "currentOwner": 0,
+      "status": "Available"
+    },
+    {
+      "name": "",
+      "epithet": "Court Wizard",
+      "ability": "In an explore endeavor, each strong success rolled counts as an extra success.",
+      "bonus1": "Explore +3 (d)",
+      "bonus2": "",
+      "bonus3": "",
+      "repCost": -1,
+      "goldCost": 8,
+      "guild": "Soldiers",
+      "set": 4,
+      "currentOwner": 0,
+      "status": "Available"
     }
   ],
   "buildings": [
@@ -964,7 +1048,7 @@
       "name": "Trading Port",
       "quantity": 2,
       "ability": "Each good sold in this region earns +4 gold",
-      "goldCost": 10,
+      "goldCost": 18,
       "type": "linen",
       "playerQuantity": {
         "1": 0,
@@ -978,6 +1062,20 @@
       "name": "Port",
       "quantity": 2,
       "ability": "Remove all damage cards from ships that end a sail order in this region",
+      "goldCost": 10,
+      "type": "spice",
+      "playerQuantity": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "enmity": 3
+    },
+    {
+      "name": "Tavern",
+      "quantity": 1,
+      "ability": "You may hire Patmos advisors without having a ship at Patmos",
       "goldCost": 10,
       "type": "spice",
       "playerQuantity": {
@@ -1043,6 +1141,20 @@
         "4": 0
       },
       "enmity": 4
+    },
+    {
+      "name": "Fortress",
+      "quantity": 1,
+      "ability": "Plus 3 garrison for this region. Weak successes do not count as successes",
+      "goldCost": 18,
+      "type": "iron",
+      "playerQuantity": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "enmity": 5
     }
   ],
   "upgrades": [
@@ -1237,6 +1349,23 @@
       "name": "Fearless",
       "quantity": 1,
       "ability": "May take 1 damage when a support ship",
+      "goldCost": 10,
+      "type": "iron",
+      "playerQuantity": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "shipQuantity": {
+        "A": 0,
+        "B": 0
+      }
+    },
+    {
+      "name": "Nefarious",
+      "quantity": 1,
+      "ability": "Each reputation spent adds +1 to Raid",
       "goldCost": 10,
       "type": "iron",
       "playerQuantity": {
