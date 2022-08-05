@@ -42,6 +42,10 @@
     background-image: url(../images/rep3.png);
 }
 
+.advisor-card .costs .ker {
+    background-image: url(../images/ker.png);
+}
+
 .advisor-card .costs .gold-cost {
     background-image: url(../images/gold3.png);
 }

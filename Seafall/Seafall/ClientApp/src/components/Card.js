@@ -15,7 +15,7 @@ export default class Card extends Component {
         bonusList.push(this.renderBonus(this.state.advisor.bonus1, "b1"));
         bonusList.push(this.renderBonus(this.state.advisor.bonus2, "b2"));
         bonusList.push(this.renderBonus(this.state.advisor.bonus3, "b3"));
-        let gloryClass = this.state.advisor.glory === 1 ? "glory" : "";
+        const gloryClass = this.state.advisor.glory === 1 ? "glory" : "";
         return (
             <div className="card col advisor-card">
                 <div className="card-body">
@@ -34,7 +34,12 @@ export default class Card extends Component {
                             {bonusList}
                         </ul>
                         <div className="col-sm-3 costs">
-                            <div className="rep-cost">{this.state.advisor.repCost}</div>
+                            {this.state.advisor.repCost > 0 &&
+                                <div className="rep-cost">{this.state.advisor.repCost}</div>
+                            }
+                            {this.state.advisor.repCost === -1 &&
+                                <div className={"ker"}></div>
+                            }
                             <br/>
                             <div className="gold-cost">{this.state.advisor.goldCost}</div>
                         </div>
