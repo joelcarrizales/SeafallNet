@@ -18,7 +18,6 @@ export class Home extends Component {
     }
 
     findAdvisor = (event) => {
-        let tmp = [];
         this.setState({ searchText: event.target.value.toLowerCase() },
             () => {
                 let tmp = this.state.game.advisors.filter(adv => adv.epithet.toLowerCase().includes(this.state.searchText) || adv.name.toLowerCase().includes(this.state.searchText));

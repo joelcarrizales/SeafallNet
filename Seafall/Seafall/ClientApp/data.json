@@ -872,7 +872,7 @@
       "guild": "Builders",
       "set": 2,
       "currentOwner": 0,
-      "status": "Hidden"
+      "status": "Available"
     },
     {
       "name": "Jacob Marlo",
@@ -887,7 +887,7 @@
       "guild": "Soldiers",
       "set": 0,
       "currentOwner": 0,
-      "status": "Hidden"
+      "status": "Available"
     },
     {
       "name": "Einstein",
@@ -902,7 +902,7 @@
       "guild": "Merchants",
       "set": 0,
       "currentOwner": 0,
-      "status": "Hidden"
+      "status": "Available"
     },
     {
       "name": "Tobias",
@@ -932,7 +932,7 @@
       "guild": "Soldiers",
       "set": 4,
       "currentOwner": 0,
-      "status": "Hidden"
+      "status": "Available"
     },
     {
       "name": "",
@@ -947,7 +947,7 @@
       "guild": "Soldiers",
       "set": 4,
       "currentOwner": 0,
-      "status": "Hidden"
+      "status": "Available"
     },
     {
       "name": "",

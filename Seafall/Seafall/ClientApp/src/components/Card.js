@@ -15,6 +15,7 @@ export default class Card extends Component {
         bonusList.push(this.renderBonus(this.state.advisor.bonus1, "b1"));
         bonusList.push(this.renderBonus(this.state.advisor.bonus2, "b2"));
         bonusList.push(this.renderBonus(this.state.advisor.bonus3, "b3"));
+        let gloryClass = this.state.advisor.glory === 1 ? "glory" : "";
         return (
             <div className="card col advisor-card">
                 <div className="card-body">
@@ -23,20 +24,21 @@ export default class Card extends Component {
                     </h5>
                     <h6 className="card-subtitle epithet">
                         {this.state.advisor.epithet}
+                        <div className={gloryClass}></div>
                     </h6>
-                        <p className="card-text">
-                            {this.state.advisor.ability}
-                        </p>
-                        <div className="row align-bottom">
-                            <ul className="col-sm-9 list-group bonuses">
-                                {bonusList}
-                            </ul>
-                            <div className="col-sm-3 costs">
-                                <div className="rep-cost">{this.state.advisor.repCost}</div>
-                                <br/>
-                                <div className="gold-cost">{this.state.advisor.goldCost}</div>
-                            </div>
+                    <p className="card-text">
+                        {this.state.advisor.ability}
+                    </p>
+                    <div className="row align-bottom">
+                        <ul className="col-sm-9 list-group bonuses">
+                            {bonusList}
+                        </ul>
+                        <div className="col-sm-3 costs">
+                            <div className="rep-cost">{this.state.advisor.repCost}</div>
+                            <br/>
+                            <div className="gold-cost">{this.state.advisor.goldCost}</div>
                         </div>
+                    </div>
                 </div>
             </div>
         );

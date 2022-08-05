@@ -6,6 +6,16 @@
     font-size: 11px;
 }
 
+.advisor-card .glory {
+    background-image: url(../images/glory.png);
+    background-size: cover;
+    min-height: 44px;
+    max-width: 44px;
+    width: 44px;
+    float: right;
+    margin-right: -16px;
+}
+
 .advisor-card p {
     height: 69px;
 }
