@@ -113,7 +113,7 @@ export class Home extends Component {
                             <input type="text" id="advisorToDraw" name="advisorToDraw" className="col" onChange={this.findAdvisor} />
                             <button className={this.state.drawButtonClass} onClick={this.drawClick}>Draw Advisor</button>
                             <select className="form-select col" aria-label="Owner" onChange={this.hireAdvisor}>
-                                <option> </option>
+                                <option>Choose an Option</option>
                                 <option value="0">Forum</option>
                                 <option value="1">Joey</option>
                                 <option value="2">Hannah</option>
@@ -124,7 +124,7 @@ export class Home extends Component {
                         </div>
                         <Forum advisors={this.state.game.advisors} />
                     </>}
-                <div className="footer">Version 1.5.2</div>
+                <div className="footer">Version 1.6.0</div>
             </div>
         );
     }
