@@ -1359,6 +1359,20 @@
       "enmity": 4
     },
     {
+      "name": "Temple",
+      "quantity": 0,
+      "ability": "+3 successes to your explore endeavors for every ancient statue discovered in the world",
+      "goldCost": 40,
+      "type": "spice",
+      "playerQuantity": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "enmity": 10
+    },
+    {
       "name": "Gun Tower",
       "quantity": 3,
       "ability": "Plus 1 garrison for this region",
@@ -1402,7 +1416,7 @@
     },
     {
       "name": "Fortress",
-      "quantity": 1,
+      "quantity": 2,
       "ability": "Plus 3 garrison for this region. Weak successes do not count as successes",
       "goldCost": 18,
       "type": "iron",
@@ -1573,6 +1587,23 @@
       "name": "Cunning",
       "quantity": 1,
       "ability": "If the flagship, may use up to two fortune tokens at dangerous sites",
+      "goldCost": 10,
+      "type": "spice",
+      "playerQuantity": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0
+      },
+      "shipQuantity": {
+        "A": 0,
+        "B": 0
+      }
+    },
+    {
+      "name": "Fanatical",
+      "quantity": 1,
+      "ability": "After any action, exhaust this to dismiss all damage and curse cards on this ship",
       "goldCost": 10,
       "type": "spice",
       "playerQuantity": {
