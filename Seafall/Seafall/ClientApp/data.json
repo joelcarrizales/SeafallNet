@@ -528,7 +528,7 @@
       "guild": "Builders",
       "set": 1,
       "currentOwner": 0,
-      "status": "Hidden"
+      "status": "Available"
     },
     {
       "name": "Mercy O'Malley",
@@ -688,7 +688,7 @@
       "guild": "Builders",
       "set": 2,
       "currentOwner": 0,
-      "status": "Hidden"
+      "status": "Available"
     },
     {
       "name": "",
@@ -1056,7 +1056,7 @@
       "guild": "Builders",
       "set": 4,
       "currentOwner": 0,
-      "status": "Hidden"
+      "status": "Available"
     },
     {
       "name": "",
@@ -1104,7 +1104,7 @@
       "guild": "Explorers",
       "set": 5,
       "currentOwner": 0,
-      "status": "Hidden"
+      "status": "Available"
     },
     {
       "name": "",
@@ -1200,7 +1200,7 @@
       "guild": "Merchants",
       "set": 5,
       "currentOwner": 0,
-      "status": "Hidden"
+      "status": "Available"
     }
   ],
   "buildings": [

@@ -1,8 +1,13 @@
 ﻿.advisor-card {
     background: #fffbee;
+    height: 320px;
 }
 
 .advisor-card.patmos {
+    background: #ebe8f9;
+}
+
+.advisor-card.society {
     background: #e5e5e5;
 }
 
@@ -21,11 +26,23 @@
 }
 
 .advisor-card p {
-    height: 69px;
+    height: 124px;
+}
+
+.advisor-card p span {
+    position: absolute;
+    right: 32px;
+    bottom: 112px;
+    font-size: 16px;
+    font-weight: bold;
 }
 
 .advisor-card .list-group-item{
     background: rgba(255,255,255,.7);
+}
+
+.advisor-card.society .card-body ul {
+    margin-top: 64px;
 }
 
 .row div.costs {
@@ -48,6 +65,10 @@
 
 .advisor-card .costs .ker {
     background-image: url(../images/ker.png);
+}
+
+.advisor-card .costs .society {
+    background-image: url(../images/society.png);
 }
 
 .advisor-card .costs .gold-cost {
