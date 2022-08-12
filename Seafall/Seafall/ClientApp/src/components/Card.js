@@ -49,7 +49,6 @@ export default class Card extends Component {
                             {this.state.advisor.repCost === -2 &&
                                 <div className={"society"}></div>
                             }
-                            <br/>
                             <div className="gold-cost">{this.state.advisor.goldCost}</div>
                         </div>
                     </div>

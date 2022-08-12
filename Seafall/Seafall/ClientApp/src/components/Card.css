@@ -61,14 +61,17 @@
 
 .advisor-card .costs .rep-cost {
     background-image: url(../images/rep3.png);
+    margin-bottom: 12px;
 }
 
 .advisor-card .costs .ker {
     background-image: url(../images/ker.png);
+    margin-bottom: 12px;
 }
 
 .advisor-card .costs .society {
     background-image: url(../images/society.png);
+    height: 56px;
 }
 
 .advisor-card .costs .gold-cost {
