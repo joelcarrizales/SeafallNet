@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import Forum from './Forum'
+import Forum from './Forum';
 import Upgrade from './Upgrade';
 import Building from './Building';
-import './Home.css'
+import Player from './Player';
+import './Home.css';
 
 export class Home extends Component {
     static displayName = Home.name;
@@ -10,7 +11,7 @@ export class Home extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            game: { advisors: [] }, loading: true, searchText: "", filteredAdvisors: [], drawButtonClass: "btn btn-outline-light col"
+            game: { advisors: [] }, loading: true, searchText: "", filteredAdvisors: [], drawButtonClass: "btn btn-outline-light col", playerDisplay: [false, true, true, true, true]
         };
     }
     componentDidMount() {
@@ -55,6 +56,12 @@ export class Home extends Component {
         let tmpGame = this.state.game;
         tmpGame.buildings[index].quantity = quantity;
         this.setState({ game: tmpGame });
+    }
+
+    displayClick = (id) => {
+        let tmp = this.state.playerDisplay;
+        tmp[id] = !tmp[id];
+        this.setState({ playerDisplay: tmp })
     }
 
     render() {
@@ -123,7 +130,17 @@ export class Home extends Component {
                             
                         </div>
                         <Forum advisors={this.state.game.advisors} />
-                    </>}
+                        <div className="row">
+                            {this.state.game.players.map(pl =>
+                                <button key={pl.id} className="btn btn-primary col" onClick={() => this.displayClick(pl.id)}>{pl.name}</button>
+                            )}
+                        </div>
+                        {this.state.game.players.filter(pl => this.state.playerDisplay[pl.id]).map(pl => (
+                            <Player key={pl.id} player={pl} />
+                            ))
+                        }
+                    </>
+                }
                 <div className="footer">Version 1.6.0</div>
             </div>
         );
