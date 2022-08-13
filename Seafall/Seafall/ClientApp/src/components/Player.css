@@ -1,2 +1,7 @@
-﻿body {
+﻿div.accordion {
+    width: 280px;
+}
+
+div.accordion-body {
+    padding: 0;
 }

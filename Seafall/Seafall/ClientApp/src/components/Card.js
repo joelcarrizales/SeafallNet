@@ -26,7 +26,7 @@ export default class Card extends Component {
                         {this.state.advisor.name === "" ? "|" : this.state.advisor.name}
                     </h5>
                     <h6 className="card-subtitle epithet">
-                        {this.state.advisor.epithet}
+                        {"The " + this.state.advisor.epithet}
                         <div className={gloryClass}></div>
                     </h6>
                     <p className="card-text">
@@ -62,7 +62,7 @@ export default class Card extends Component {
             return (<li key={key} className="list-group-item">|</li>);
         }
         else if (bonus !== "") {
-            return (<li key={bonus} className="list-group-item">{bonus}</li>);
+            return (<li key={key} className="list-group-item">{bonus}</li>);
         }
         else {
             return ""

@@ -136,7 +136,7 @@ export class Home extends Component {
                             )}
                         </div>
                         {this.state.game.players.filter(pl => this.state.playerDisplay[pl.id]).map(pl => (
-                            <Player key={pl.id} player={pl} />
+                            <Player key={pl.id} player={pl} advisors={this.state.game.advisors.filter(adv => adv.currentOwner === pl.id)} />
                             ))
                         }
                     </>
