@@ -528,7 +528,7 @@
       "guild": "Builders",
       "set": 1,
       "currentOwner": 0,
-      "status": "Available"
+      "status": "Hidden"
     },
     {
       "name": "Mercy O'Malley",
@@ -688,7 +688,7 @@
       "guild": "Builders",
       "set": 2,
       "currentOwner": 0,
-      "status": "Available"
+      "status": "Hidden"
     },
     {
       "name": "",
@@ -1056,7 +1056,7 @@
       "guild": "Builders",
       "set": 4,
       "currentOwner": 0,
-      "status": "Available"
+      "status": "Hidden"
     },
     {
       "name": "",
@@ -1104,7 +1104,7 @@
       "guild": "Explorers",
       "set": 5,
       "currentOwner": 0,
-      "status": "Available"
+      "status": "Hidden"
     },
     {
       "name": "",
@@ -1200,7 +1200,7 @@
       "guild": "Merchants",
       "set": 5,
       "currentOwner": 0,
-      "status": "Available"
+      "status": "Hidden"
     }
   ],
   "buildings": [
@@ -1701,80 +1701,6 @@
         "A": 0,
         "B": 0
       }
-    }
-  ],
-  "milestones": [
-    {
-      "name": "The End is the Beginning",
-      "requirement": "Find the island at the end of the world. This will name an Emperor.",
-      "glory": 12,
-      "status": "Available"
-    },
-    {
-      "name": "Clad in Marble",
-      "requirement": "Have five structures.",
-      "glory": 4,
-      "status": "Available"
-    },
-    {
-      "name": "Birth of an Empire",
-      "requirement": "Have three active colonies",
-      "glory": 4,
-      "status": "Available"
-    },
-    {
-      "name": "Power of the Ancients",
-      "requirement": "Have two relics.",
-      "glory": 3,
-      "status": "Available"
-    },
-    {
-      "name": "The Ancient Capital Razed",
-      "requirement": "Conquer the Ancient City of Ker.",
-      "glory": 4,
-      "status": "Available"
-    },
-    {
-      "name": "The Temple Falls",
-      "requirement": "Successfully raid the temple on Tortosa",
-      "glory": 5,
-      "status": "Available"
-    },
-    {
-      "name": "The Temple Reborn",
-      "requirement": "Build the Temple on a build site you control",
-      "glory": 5,
-      "status": "Available"
-    },
-    {
-      "name": "Faces to the Whispers",
-      "requirement": "Have five advisors in your council room with your enmity on them.",
-      "glory": 2,
-      "status": "Available"
-    },
-    {
-      "name": "The Secret of Bronze",
-      "requirement": "Discover the secret of the bronze statue.",
-      "glory": 6,
-      "status": "Available"
-    },
-    {
-      "name": "The Secret of Silver",
-      "requirement": "Discover the secret of the silver statue.",
-      "glory": 6,
-      "status": "Available"
-    },
-    {
-      "name": "The Secret of Gold",
-      "requirement": "Discover the secret of the gold statue.",
-      "glory": 6,
-      "status": "Available"
-    },
-    {
-      "name": "The Masques Have Fallen",
-      "requirement": "Find a chart to the island at the end of the world.",
-      "glory": 2,
-      "status": "Available"
     }
   ]
 }

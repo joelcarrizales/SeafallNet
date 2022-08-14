@@ -141,7 +141,7 @@ export class Home extends Component {
                         <Forum advisors={this.state.game.advisors} />
                         <div className="row">
                             {this.state.game.players.map(pl =>
-                                <button key={pl.id} className="btn btn-primary col" onClick={() => this.displayClick(pl.id)}>{pl.name}</button>
+                                <button key={pl.id} className="btn btn-primary col" onClick={() => this.displayClick(pl.id)}>{(this.state.playerDisplay[pl.id] ? "Hide " : "Show ") + pl.name}</button>
                             )}
                         </div>
                         {this.state.game.players.filter(pl => this.state.playerDisplay[pl.id]).map(pl => (
@@ -153,7 +153,7 @@ export class Home extends Component {
                         }
                     </>
                 }
-                <div className="footer">Version 1.6.0</div>
+                <div className="footer">Version 2.0.0</div>
             </div>
         );
     }
