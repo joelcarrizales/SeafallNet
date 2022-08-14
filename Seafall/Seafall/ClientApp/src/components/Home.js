@@ -64,6 +64,15 @@ export class Home extends Component {
         this.setState({ playerDisplay: tmp })
     }
 
+    updateGold = (id, gold) => {
+        if (typeof parseInt(gold) === "number") {
+            const index = this.state.game.players.findIndex(pl => pl.id === id);
+            let tmpGame = this.state.game;
+            tmpGame.players[index].gold = gold;
+            this.setState({ game: tmpGame });
+        }
+    }
+
     render() {
         let contents = this.state.loading && this.state.game != undefined && this.state.game.advisors != undefined
             ? <p><em>Loading...</em></p>
@@ -136,7 +145,10 @@ export class Home extends Component {
                             )}
                         </div>
                         {this.state.game.players.filter(pl => this.state.playerDisplay[pl.id]).map(pl => (
-                            <Player key={pl.id} player={pl} advisors={this.state.game.advisors.filter(adv => adv.currentOwner === pl.id)} />
+                            <Player key={pl.id}
+                                player={pl}
+                                advisors={this.state.game.advisors.filter(adv => adv.currentOwner === pl.id)}
+                                action={this.updateGold} />
                             ))
                         }
                     </>

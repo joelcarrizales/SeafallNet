@@ -13,6 +13,10 @@ export default function Player(props) {
         }
     };
 
+    const handleChange = (event) => {
+        props.action(props.player.id, event.target.value);
+    }
+
     let accordionItems = props.advisors.map((adv, index) => (
         <AccordionItem key={index}>
             <AccordionHeader targetId={index.toString()}>{adv.name !== "" ? adv.name : ("The " + adv.epithet)}</AccordionHeader>
@@ -24,10 +28,17 @@ export default function Player(props) {
 
     return (
         <div className="row">
-            <div className="col">
-                {props.player.name}
+            <div className="col-sm-4 offset-sm-2">
+                <h1>
+                    {props.player.name}
+                </h1>
+                <div className="row">
+                    <label className="col-sm-4">Gold count: {props.player.gold}</label>
+                    <input type="text" className="col-sm-3" onChange={handleChange} />
+                </div>
+                
             </div>
-            <div className="col">
+            <div className="col-sm-5">
                 <Accordion open={open} toggle={toggle}>
                     {accordionItems}
                 </Accordion>

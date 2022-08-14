@@ -5,3 +5,7 @@
 div.accordion-body {
     padding: 0;
 }
+
+.collapsing {
+    transition: height .5s;
+}
