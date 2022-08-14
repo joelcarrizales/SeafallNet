@@ -18,6 +18,7 @@ export default class Card extends Component {
         const gloryClass = this.state.advisor.glory === 1 ? "glory" : "";
         let advisorClass = "card col advisor-card";
         advisorClass += this.state.advisor.repCost === -1 ? " patmos" : "";
+        advisorClass += this.state.advisor.repCost === -2 ? " society" : "";
         return (
             <div className={advisorClass}>
                 <div className="card-body">
@@ -25,11 +26,14 @@ export default class Card extends Component {
                         {this.state.advisor.name === "" ? "|" : this.state.advisor.name}
                     </h5>
                     <h6 className="card-subtitle epithet">
-                        {this.state.advisor.epithet}
+                        {"The " + this.state.advisor.epithet}
                         <div className={gloryClass}></div>
                     </h6>
                     <p className="card-text">
                         {this.state.advisor.ability}
+                        {this.state.advisor.rank > 0 &&
+                            <span>{this.state.advisor.rank}</span>
+                        }
                     </p>
                     <div className="row align-bottom">
                         <ul className="col-sm-9 list-group bonuses">
@@ -42,7 +46,9 @@ export default class Card extends Component {
                             {this.state.advisor.repCost === -1 &&
                                 <div className={"ker"}></div>
                             }
-                            <br/>
+                            {this.state.advisor.repCost === -2 &&
+                                <div className={"society"}></div>
+                            }
                             <div className="gold-cost">{this.state.advisor.goldCost}</div>
                         </div>
                     </div>
@@ -56,7 +62,7 @@ export default class Card extends Component {
             return (<li key={key} className="list-group-item">|</li>);
         }
         else if (bonus !== "") {
-            return (<li key={bonus} className="list-group-item">{bonus}</li>);
+            return (<li key={key} className="list-group-item">{bonus}</li>);
         }
         else {
             return ""
