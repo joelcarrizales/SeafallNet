@@ -78,7 +78,7 @@
     background-image: url(../images/gold3.png);
 }
 
-.advisor-card span {
+.advisor-card .bonuses span {
     width: 16px;
     height: 16px;
     display: inline-block;
@@ -86,19 +86,19 @@
     margin-bottom: -4px;
 }
 
-.advisor-card span.good {
+.advisor-card .bonuses span.good {
     background-image: url(../images/good.png);
 }
 
-.advisor-card span.gold {
+.advisor-card .bonuses span.gold {
     background-image: url(../images/gold3.png);
 }
 
-.advisor-card span.die {
+.advisor-card .bonuses span.die {
     background-image: url(../images/die.png);
 }
 
-.advisor-card span.card {
+.advisor-card .bonuses span.card {
     background-image: url(../images/card.png);
     border: none;
     width: 13px;
