@@ -62,7 +62,18 @@ export default class Card extends Component {
             return (<li key={key} className="list-group-item">|</li>);
         }
         else if (bonus !== "") {
-            return (<li key={key} className="list-group-item">{bonus}</li>);
+            let bonusParts = bonus.split('(');
+            let bonusClass = "gold";
+            if (bonusParts[1].includes('i')) {
+                bonusClass = "good";
+            }
+            else if (bonusParts[1].includes('d')) {
+                bonusClass = "die";
+            }
+            else if (bonusParts[1].includes('c')) {
+                bonusClass = "card";
+            }
+            return (<li key={key} className="list-group-item">{bonusParts[0]} <span className={bonusClass}></span></li>);
         }
         else {
             return ""

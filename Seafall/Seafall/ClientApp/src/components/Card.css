@@ -77,3 +77,29 @@
 .advisor-card .costs .gold-cost {
     background-image: url(../images/gold3.png);
 }
+
+.advisor-card span {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    background-size: cover;
+    margin-bottom: -4px;
+}
+
+.advisor-card span.good {
+    background-image: url(../images/good.png);
+}
+
+.advisor-card span.gold {
+    background-image: url(../images/gold3.png);
+}
+
+.advisor-card span.die {
+    background-image: url(../images/die.png);
+}
+
+.advisor-card span.card {
+    background-image: url(../images/card.png);
+    border: none;
+    width: 13px;
+}
