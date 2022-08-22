@@ -2,6 +2,7 @@ import { About } from "./components/About";
 import { Tombs } from "./components/Tombs";
 import { Home } from "./components/Home";
 import { Milestones } from "./components/Milestones";
+import { CaptainsBook } from "./components/CaptainsBook";
 
 const AppRoutes = [
     {
@@ -19,6 +20,10 @@ const AppRoutes = [
     {
     path: '/milestones',
     element: <Milestones />
+    },
+    {
+    path: '/captainsbook',
+    element: <CaptainsBook />
     }
 ];
 
