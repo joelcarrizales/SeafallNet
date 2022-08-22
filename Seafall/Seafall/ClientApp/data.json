@@ -48,6 +48,7 @@
       "guild": "Explorers",
       "set": 3,
       "currentOwner": 0,
+      "enmity": 0,
       "status": "Hidden"
     },
     {
@@ -64,6 +65,7 @@
       "guild": "Explorers",
       "set": 3,
       "currentOwner": 0,
+      "enmity": 0,
       "status": "Hidden"
     },
     {
@@ -80,6 +82,7 @@
       "guild": "Builders",
       "set": 0,
       "currentOwner": 0,
+      "enmity": 0,
       "status": "Hidden"
     },
     {
@@ -96,6 +99,7 @@
       "guild": "Soldiers",
       "set": 0,
       "currentOwner": 0,
+      "enmity": 0,
       "status": "Hidden"
     },
     {
@@ -112,6 +116,7 @@
       "guild": "Merchants",
       "set": 0,
       "currentOwner": 0,
+      "enmity": 0,
       "status": "Hidden"
     },
     {
@@ -128,6 +133,7 @@
       "guild": "Explorers",
       "set": 0,
       "currentOwner": 0,
+      "enmity": 0,
       "status": "Hidden"
     },
     {
@@ -144,6 +150,7 @@
       "guild": "Merchants",
       "set": 0,
       "currentOwner": 0,
+      "enmity": 0,
       "status": "Hidden"
     },
     {
@@ -160,6 +167,7 @@
       "guild": "Explorers",
       "set": 0,
       "currentOwner": 0,
+      "enmity": 0,
       "status": "Hidden"
     },
     {
@@ -176,6 +184,7 @@
       "guild": "Merchants",
       "set": 0,
       "currentOwner": 0,
+      "enmity": 3,
       "status": "Hidden"
     },
     {
@@ -192,6 +201,7 @@
       "guild": "Explorers",
       "set": 3,
       "currentOwner": 0,
+      "enmity": 0,
       "status": "Hidden"
     },
     {
@@ -208,6 +218,7 @@
       "guild": "Builders",
       "set": 0,
       "currentOwner": 0,
+      "enmity": 0,
       "status": "Hidden"
     },
     {
@@ -224,6 +235,7 @@
       "guild": "Soldiers",
       "set": 0,
       "currentOwner": 0,
+      "enmity": 0,
       "status": "Hidden"
     },
     {
@@ -240,6 +252,7 @@
       "guild": "Soldiers",
       "set": 0,
       "currentOwner": 0,
+      "enmity": 0,
       "status": "Hidden"
     },
     {
@@ -256,6 +269,7 @@
       "guild": "Builders",
       "set": 0,
       "currentOwner": 0,
+      "enmity": 0,
       "status": "Hidden"
     },
     {
@@ -272,6 +286,7 @@
       "guild": "Merchants",
       "set": 0,
       "currentOwner": 0,
+      "enmity": 0,
       "status": "Hidden"
     },
     {
@@ -287,8 +302,9 @@
       "rank": 0,
       "guild": "Builders",
       "set": 0,
-      "currentOwner": 4,
-      "status": "Ready"
+      "currentOwner": 0,
+      "enmity": 0,
+      "status": "Hidden"
     },
     {
       "name": "Steven Carr",
@@ -304,6 +320,7 @@
       "guild": "Explorers",
       "set": 0,
       "currentOwner": 0,
+      "enmity": 0,
       "status": "Hidden"
     },
     {
@@ -320,6 +337,7 @@
       "guild": "Explorers",
       "set": 0,
       "currentOwner": 0,
+      "enmity": 0,
       "status": "Hidden"
     },
     {
@@ -336,6 +354,7 @@
       "guild": "Builders",
       "set": 0,
       "currentOwner": 0,
+      "enmity": 0,
       "status": "Hidden"
     },
     {
@@ -352,6 +371,7 @@
       "guild": "Soldiers",
       "set": 0,
       "currentOwner": 0,
+      "enmity": 1,
       "status": "Hidden"
     },
     {
@@ -368,6 +388,7 @@
       "guild": "Explorers",
       "set": 0,
       "currentOwner": 0,
+      "enmity": 0,
       "status": "Hidden"
     },
     {
@@ -383,8 +404,9 @@
       "rank": 0,
       "guild": "Explorers",
       "set": 1,
-      "currentOwner": 0,
-      "status": "Hidden"
+      "currentOwner": 3,
+      "enmity": 3,
+      "status": "Ready"
     },
     {
       "name": "Abby",
@@ -399,8 +421,9 @@
       "rank": 0,
       "guild": "Soldiers",
       "set": 1,
-      "currentOwner": 0,
-      "status": "Hidden"
+      "currentOwner": 1,
+      "enmity": 1,
+      "status": "Ready"
     },
     {
       "name": "'Bug' Doug",
@@ -415,8 +438,9 @@
       "rank": 0,
       "guild": "Merchants",
       "set": 1,
-      "currentOwner": 1,
-      "status": "Ready"
+      "currentOwner": 0,
+      "enmity": 1,
+      "status": "Hidden"
     },
     {
       "name": "",
@@ -432,6 +456,7 @@
       "guild": "Merchants",
       "set": 1,
       "currentOwner": 0,
+      "enmity": 0,
       "status": "Hidden"
     },
     {
@@ -448,6 +473,7 @@
       "guild": "Soldiers",
       "set": 1,
       "currentOwner": 0,
+      "enmity": 1,
       "status": "Hidden"
     },
     {
@@ -464,6 +490,7 @@
       "guild": "Explorers",
       "set": 1,
       "currentOwner": 0,
+      "enmity": 0,
       "status": "Hidden"
     },
     {
@@ -480,6 +507,7 @@
       "guild": "Soldiers",
       "set": 1,
       "currentOwner": 0,
+      "enmity": 0,
       "status": "Hidden"
     },
     {
@@ -496,6 +524,7 @@
       "guild": "Soldiers",
       "set": 1,
       "currentOwner": 0,
+      "enmity": 0,
       "status": "Hidden"
     },
     {
@@ -512,6 +541,7 @@
       "guild": "Builders",
       "set": 1,
       "currentOwner": 0,
+      "enmity": 0,
       "status": "Hidden"
     },
     {
@@ -528,6 +558,7 @@
       "guild": "Builders",
       "set": 1,
       "currentOwner": 0,
+      "enmity": 0,
       "status": "Hidden"
     },
     {
@@ -544,6 +575,7 @@
       "guild": "Soldiers",
       "set": 1,
       "currentOwner": 0,
+      "enmity": 0,
       "status": "Hidden"
     },
     {
@@ -560,6 +592,7 @@
       "guild": "Builders",
       "set": 1,
       "currentOwner": 0,
+      "enmity": 1,
       "status": "Hidden"
     },
     {
@@ -576,6 +609,7 @@
       "guild": "Explorers",
       "set": 1,
       "currentOwner": 0,
+      "enmity": 3,
       "status": "Hidden"
     },
     {
@@ -592,6 +626,7 @@
       "guild": "Explorers",
       "set": 1,
       "currentOwner": 0,
+      "enmity": 2,
       "status": "Hidden"
     },
     {
@@ -608,6 +643,7 @@
       "guild": "Explorers",
       "set": 1,
       "currentOwner": 0,
+      "enmity": 0,
       "status": "Hidden"
     },
     {
@@ -624,6 +660,7 @@
       "guild": "Builders",
       "set": 2,
       "currentOwner": 0,
+      "enmity": 0,
       "status": "Hidden"
     },
     {
@@ -640,6 +677,7 @@
       "guild": "Merchants",
       "set": 2,
       "currentOwner": 2,
+      "enmity": 0,
       "status": "Ready"
     },
     {
@@ -656,6 +694,7 @@
       "guild": "Builders",
       "set": 2,
       "currentOwner": 0,
+      "enmity": 0,
       "status": "Hidden"
     },
     {
@@ -672,6 +711,7 @@
       "guild": "Merchants",
       "set": 2,
       "currentOwner": 0,
+      "enmity": 0,
       "status": "Hidden"
     },
     {
@@ -688,6 +728,7 @@
       "guild": "Builders",
       "set": 2,
       "currentOwner": 0,
+      "enmity": 0,
       "status": "Hidden"
     },
     {
@@ -704,6 +745,7 @@
       "guild": "Merchants",
       "set": 2,
       "currentOwner": 0,
+      "enmity": 0,
       "status": "Hidden"
     },
     {
@@ -720,6 +762,7 @@
       "guild": "Merchants",
       "set": 2,
       "currentOwner": 0,
+      "enmity": 0,
       "status": "Hidden"
     },
     {
@@ -736,6 +779,7 @@
       "guild": "Builders",
       "set": 2,
       "currentOwner": 0,
+      "enmity": 0,
       "status": "Hidden"
     },
     {
@@ -752,6 +796,7 @@
       "guild": "Builders",
       "set": 2,
       "currentOwner": 0,
+      "enmity": 0,
       "status": "Hidden"
     },
     {
@@ -768,6 +813,7 @@
       "guild": "Merchants",
       "set": 2,
       "currentOwner": 0,
+      "enmity": 0,
       "status": "Hidden"
     },
     {
@@ -784,6 +830,7 @@
       "guild": "Merchants",
       "set": 2,
       "currentOwner": 0,
+      "enmity": 0,
       "status": "Hidden"
     },
     {
@@ -800,6 +847,7 @@
       "guild": "Merchants",
       "set": 2,
       "currentOwner": 0,
+      "enmity": 0,
       "status": "Hidden"
     },
     {
@@ -816,6 +864,7 @@
       "guild": "Merchants",
       "set": 2,
       "currentOwner": 0,
+      "enmity": 0,
       "status": "Hidden"
     },
     {
@@ -832,6 +881,7 @@
       "guild": "Merchants",
       "set": 2,
       "currentOwner": 0,
+      "enmity": 0,
       "status": "Hidden"
     },
     {
@@ -848,6 +898,7 @@
       "guild": "Merchants",
       "set": 2,
       "currentOwner": 0,
+      "enmity": 0,
       "status": "Hidden"
     },
     {
@@ -864,10 +915,11 @@
       "guild": "Explorers",
       "set": 3,
       "currentOwner": 0,
+      "enmity": 0,
       "status": "Hidden"
     },
     {
-      "name": "",
+      "name": "Serena",
       "epithet": "Priest (f)",
       "ability": "During a repair action you may spend 2 gold to dismiss a curse card on that ship. You may do this multiple times.",
       "bonus1": "Research +3 (c)",
@@ -880,10 +932,11 @@
       "guild": "Explorers",
       "set": 3,
       "currentOwner": 0,
+      "enmity": 2,
       "status": "Hidden"
     },
     {
-      "name": "",
+      "name": "Parasite",
       "epithet": "Acolyte",
       "ability": "+2 dice to an explore endeavor for every relic on your flagship",
       "bonus1": "Explore +1 (d)",
@@ -896,6 +949,7 @@
       "guild": "Explorers",
       "set": 2,
       "currentOwner": 0,
+      "enmity": 4,
       "status": "Hidden"
     },
     {
@@ -912,6 +966,7 @@
       "guild": "Explorers",
       "set": 2,
       "currentOwner": 0,
+      "enmity": 0,
       "status": "Hidden"
     },
     {
@@ -927,8 +982,9 @@
       "rank": 0,
       "guild": "Builders",
       "set": 2,
-      "currentOwner": 0,
-      "status": "Hidden"
+      "currentOwner": 4,
+      "enmity": 4,
+      "status": "Ready"
     },
     {
       "name": "Jacob Marlo",
@@ -944,6 +1000,7 @@
       "guild": "Soldiers",
       "set": 0,
       "currentOwner": 0,
+      "enmity": 0,
       "status": "Hidden"
     },
     {
@@ -960,6 +1017,7 @@
       "guild": "Merchants",
       "set": 0,
       "currentOwner": 0,
+      "enmity": 0,
       "status": "Hidden"
     },
     {
@@ -976,6 +1034,7 @@
       "guild": "Soldiers",
       "set": 1,
       "currentOwner": 0,
+      "enmity": 0,
       "status": "Hidden"
     },
     {
@@ -992,6 +1051,7 @@
       "guild": "Soldiers",
       "set": 4,
       "currentOwner": 0,
+      "enmity": 0,
       "status": "Hidden"
     },
     {
@@ -1008,6 +1068,7 @@
       "guild": "Soldiers",
       "set": 4,
       "currentOwner": 0,
+      "enmity": 0,
       "status": "Hidden"
     },
     {
@@ -1024,6 +1085,7 @@
       "guild": "Soldiers",
       "set": 4,
       "currentOwner": 0,
+      "enmity": 0,
       "status": "Hidden"
     },
     {
@@ -1040,6 +1102,7 @@
       "guild": "Merchants",
       "set": 4,
       "currentOwner": 0,
+      "enmity": 0,
       "status": "Hidden"
     },
     {
@@ -1056,6 +1119,7 @@
       "guild": "Builders",
       "set": 4,
       "currentOwner": 0,
+      "enmity": 0,
       "status": "Hidden"
     },
     {
@@ -1072,6 +1136,7 @@
       "guild": "Explorers",
       "set": 4,
       "currentOwner": 0,
+      "enmity": 0,
       "status": "Hidden"
     },
     {
@@ -1088,6 +1153,7 @@
       "guild": "Explorers",
       "set": 5,
       "currentOwner": 0,
+      "enmity": 0,
       "status": "Hidden"
     },
     {
@@ -1104,6 +1170,7 @@
       "guild": "Explorers",
       "set": 5,
       "currentOwner": 0,
+      "enmity": 0,
       "status": "Hidden"
     },
     {
@@ -1120,6 +1187,7 @@
       "guild": "Soldiers",
       "set": 5,
       "currentOwner": 0,
+      "enmity": 0,
       "status": "Hidden"
     },
     {
@@ -1136,6 +1204,7 @@
       "guild": "Soldiers",
       "set": 5,
       "currentOwner": 0,
+      "enmity": 0,
       "status": "Hidden"
     },
     {
@@ -1152,6 +1221,7 @@
       "guild": "Builders",
       "set": 5,
       "currentOwner": 0,
+      "enmity": 0,
       "status": "Hidden"
     },
     {
@@ -1168,6 +1238,7 @@
       "guild": "Builders",
       "set": 5,
       "currentOwner": 0,
+      "enmity": 0,
       "status": "Hidden"
     },
     {
@@ -1184,6 +1255,7 @@
       "guild": "Merchants",
       "set": 5,
       "currentOwner": 0,
+      "enmity": 0,
       "status": "Hidden"
     },
     {
@@ -1200,6 +1272,7 @@
       "guild": "Merchants",
       "set": 5,
       "currentOwner": 0,
+      "enmity": 0,
       "status": "Hidden"
     }
   ],
