@@ -11,6 +11,8 @@ export default class Card extends Component {
     }
 
     render() {
+        let eny = this.state.advisor.enmity;
+        let colors = ["blue", "red", "forestgreen", "blueviolet"];
         let bonusList = [];
         bonusList.push(this.renderBonus(this.state.advisor.bonus1, "b1"));
         bonusList.push(this.renderBonus(this.state.advisor.bonus2, "b2"));
@@ -23,10 +25,13 @@ export default class Card extends Component {
             <div className={advisorClass}>
                 <div className="card-body">
                     <h5 className="card-title name">
-                        {this.state.advisor.name === "" ? "|" : this.state.advisor.name}
+                        {this.state.advisor.guild[0] + ' ' + this.state.advisor.name}
                     </h5>
                     <h6 className="card-subtitle epithet">
                         {"The " + this.state.advisor.epithet}
+                        {eny > 0 ?
+                            <span style={{color: colors[eny-1], fontWeight: "bold"}}>&nbsp;&nbsp;:(</span>
+                            : ""}
                         <div className={gloryClass}></div>
                     </h6>
                     <p className="card-text">
