@@ -7,7 +7,7 @@ export class About extends Component {
 
     render() {
         return (
-            <h2>Version 2.4.1</h2>
+            <h2>Version 2.4.2</h2>
         );
     }
 }
