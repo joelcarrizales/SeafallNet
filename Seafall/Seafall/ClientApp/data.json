@@ -48,7 +48,7 @@
       "guild": "Explorers",
       "set": 3,
       "currentOwner": 0,
-      "enmity": 0,
+      "enmity": 3,
       "status": "Hidden"
     },
     {
@@ -57,7 +57,7 @@
       "ability": "+2 dice to any endeavor made in a tomb.",
       "bonus1": "Explore +2 (d)",
       "bonus2": "Research +2 (c)",
-      "bonus3": "Open",
+      "bonus3": "Build -4 (g)",
       "repCost": 1,
       "goldCost": 4,
       "glory": 0,
@@ -65,7 +65,7 @@
       "guild": "Explorers",
       "set": 3,
       "currentOwner": 0,
-      "enmity": 0,
+      "enmity": 3,
       "status": "Hidden"
     },
     {
@@ -116,7 +116,7 @@
       "guild": "Merchants",
       "set": 0,
       "currentOwner": 0,
-      "enmity": 0,
+      "enmity": 4,
       "status": "Hidden"
     },
     {
@@ -397,16 +397,16 @@
       "ability": "At the end of your turn, before exhausting the Navigator, you may move one or both of your ships to your home harbor.",
       "bonus1": "Explore +2 (d)",
       "bonus2": "Research +2 (c)",
-      "bonus3": "Open",
+      "bonus3": "Buy Goods +2 (i)",
       "repCost": 2,
       "goldCost": 5,
       "glory": 0,
       "rank": 0,
       "guild": "Explorers",
       "set": 1,
-      "currentOwner": 3,
+      "currentOwner": 0,
       "enmity": 3,
-      "status": "Ready"
+      "status": "Hidden"
     },
     {
       "name": "Abby",
@@ -421,9 +421,9 @@
       "rank": 0,
       "guild": "Soldiers",
       "set": 1,
-      "currentOwner": 1,
+      "currentOwner": 0,
       "enmity": 1,
-      "status": "Ready"
+      "status": "Hidden"
     },
     {
       "name": "'Bug' Doug",
@@ -507,7 +507,7 @@
       "guild": "Soldiers",
       "set": 1,
       "currentOwner": 0,
-      "enmity": 0,
+      "enmity": 1,
       "status": "Hidden"
     },
     {
@@ -528,7 +528,7 @@
       "status": "Hidden"
     },
     {
-      "name": "",
+      "name": "Duessel",
       "epithet": "Blackmailer",
       "ability": "At the end of your turn, before exhausting the Blackmailer, hire an advisor in the forum with a gold cost of 3 or less for free.",
       "bonus1": "Upgrade -4 (g)",
@@ -540,9 +540,9 @@
       "rank": 0,
       "guild": "Builders",
       "set": 1,
-      "currentOwner": 0,
-      "enmity": 0,
-      "status": "Hidden"
+      "currentOwner": 1,
+      "enmity": 1,
+      "status": "Ready"
     },
     {
       "name": "",
@@ -567,7 +567,7 @@
       "ability": "Give 2 fewer enmity during a raid action.",
       "bonus1": "Raid +2 (d)",
       "bonus2": "Raid +1 (d)",
-      "bonus3": "Open",
+      "bonus3": "Sell Goods +1 (i)",
       "repCost": 2,
       "goldCost": 5,
       "glory": 0,
@@ -575,7 +575,7 @@
       "guild": "Soldiers",
       "set": 1,
       "currentOwner": 0,
-      "enmity": 0,
+      "enmity": 1,
       "status": "Hidden"
     },
     {
@@ -745,7 +745,7 @@
       "guild": "Merchants",
       "set": 2,
       "currentOwner": 0,
-      "enmity": 0,
+      "enmity": 4,
       "status": "Hidden"
     },
     {
@@ -1106,7 +1106,7 @@
       "status": "Hidden"
     },
     {
-      "name": "",
+      "name": "Henry Dean",
       "epithet": "Tinker",
       "ability": "After a sail action, you may remove one damage card from each of your ships.",
       "bonus1": "Build -6 (g)",
@@ -1119,7 +1119,7 @@
       "guild": "Builders",
       "set": 4,
       "currentOwner": 0,
-      "enmity": 0,
+      "enmity": 1,
       "status": "Hidden"
     },
     {
