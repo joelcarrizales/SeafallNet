@@ -11,7 +11,7 @@ export class Home extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            game: { advisors: [] }, loading: true, searchText: "", filteredAdvisors: [], drawButtonClass: "btn btn-outline-light col", playerDisplay: [false, true, true, true, true]
+            game: { advisors: [] }, loading: true, searchText: "", filteredAdvisors: [], drawButtonClass: "btn btn-outline-light col", playerDisplay: [false, true, true, true, true, true]
         };
     }
     componentDidMount() {
@@ -134,7 +134,8 @@ export class Home extends Component {
                                 <option value="1">Joey</option>
                                 <option value="2">Hannah</option>
                                 <option value="3">Zach</option>
-                                <option value="4">Pete</option>
+                                <option value="4">Bo</option>
+                                <option value="5">Pete</option>
                             </select>
                             
                         </div>
@@ -153,7 +154,7 @@ export class Home extends Component {
                         }
                     </>
                 }
-                <div className="footer">Version 2.4.2</div>
+                <div className="footer">Version 2.4.3</div>
             </div>
         );
     }

@@ -31,6 +31,14 @@
       "gold": 8,
       "reputation": 2,
       "fortune": 2
+    },
+    {
+      "id": 5,
+      "name": "Pete",
+      "glory": 0,
+      "gold": 8,
+      "reputation": 2,
+      "fortune": 2
     }
   ],
   "advisors": [
@@ -150,7 +158,7 @@
       "guild": "Merchants",
       "set": 0,
       "currentOwner": 0,
-      "enmity": 0,
+      "enmity": 4,
       "status": "Hidden"
     },
     {
@@ -443,7 +451,7 @@
       "status": "Hidden"
     },
     {
-      "name": "",
+      "name": "Merlinus",
       "epithet": "Caravan Driver",
       "ability": "During a buy action, you may also buy goods from the supply for 6 gold each. Place these goods in your province warehouse.",
       "bonus1": "Sell Goods +2 (i)",
@@ -456,7 +464,7 @@
       "guild": "Merchants",
       "set": 1,
       "currentOwner": 0,
-      "enmity": 0,
+      "enmity": 1,
       "status": "Hidden"
     },
     {
@@ -545,7 +553,7 @@
       "status": "Ready"
     },
     {
-      "name": "",
+      "name": "Baraq",
       "epithet": "Politician",
       "ability": "At the end of your turn, before exhausting the Politician, you may hire an advisor or buy a treasure",
       "bonus1": "Tax +3 (g)",
@@ -558,7 +566,7 @@
       "guild": "Builders",
       "set": 1,
       "currentOwner": 0,
-      "enmity": 0,
+      "enmity": 3,
       "status": "Hidden"
     },
     {
@@ -817,7 +825,7 @@
       "status": "Hidden"
     },
     {
-      "name": "",
+      "name": "Inara",
       "epithet": "Noble",
       "ability": "When the Noble becomes your active advisor, gain 2 gold for every structure you control.",
       "bonus1": "Buy Goods +3 (i)",
@@ -830,7 +838,7 @@
       "guild": "Merchants",
       "set": 2,
       "currentOwner": 0,
-      "enmity": 0,
+      "enmity": 2,
       "status": "Hidden"
     },
     {
@@ -1000,7 +1008,7 @@
       "guild": "Soldiers",
       "set": 0,
       "currentOwner": 0,
-      "enmity": 0,
+      "enmity": 3,
       "status": "Hidden"
     },
     {
@@ -1016,9 +1024,9 @@
       "rank": 0,
       "guild": "Merchants",
       "set": 0,
-      "currentOwner": 0,
+      "currentOwner": 5,
       "enmity": 0,
-      "status": "Hidden"
+      "status": "Ready"
     },
     {
       "name": "Tobias",
@@ -1170,7 +1178,7 @@
       "guild": "Explorers",
       "set": 5,
       "currentOwner": 0,
-      "enmity": 0,
+      "enmity": 3,
       "status": "Hidden"
     },
     {
@@ -1221,7 +1229,7 @@
       "guild": "Builders",
       "set": 5,
       "currentOwner": 0,
-      "enmity": 0,
+      "enmity": 3,
       "status": "Hidden"
     },
     {
