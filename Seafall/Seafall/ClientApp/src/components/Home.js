@@ -41,7 +41,7 @@ export class Home extends Component {
         let tmpGame = this.state.game;
         tmpGame.advisors[index].currentOwner = parseInt(event.target.value);
         tmpGame.advisors[index].status = event.target.value == 0 ? "Hidden" : "Ready";
-        this.setState({ game: tmpGame }, ()=> event.target.value = "");
+        this.setState({ game: tmpGame }, () => event.target.value = "");
     }
 
     editUpgrade = (name, quantity) => {

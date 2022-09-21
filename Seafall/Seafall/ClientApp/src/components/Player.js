@@ -24,7 +24,7 @@ export default function Player(props) {
                 <Card advisor={adv} />
             </AccordionBody>
         </AccordionItem>
-    ))
+    ));
 
     return (
         <div className="row">
