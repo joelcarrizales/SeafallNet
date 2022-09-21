@@ -2,7 +2,7 @@
 {
     public class GameService
     {
-        public static string Game = "";
+        public static string Game = "{}";
 
         private static GameService _gameService = new GameService();
 
