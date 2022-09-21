@@ -162,7 +162,7 @@ export class Home extends Component {
     async populateGameData() {
         const response = await fetch('game');
         const data = await response.json();
-        if (data.game !== undefined) {
+        if (data.Game !== undefined) {
             this.setState({ game: data.Game, loading: false });
         }
     }
