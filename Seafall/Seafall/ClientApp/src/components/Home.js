@@ -154,7 +154,7 @@ export class Home extends Component {
                         }
                     </>
                 }
-                <div className="footer">Version 2.4.3</div>
+                <div className="footer">Version 2.4.4</div>
             </div>
         );
     }

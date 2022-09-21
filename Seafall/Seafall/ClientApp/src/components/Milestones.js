@@ -24,7 +24,7 @@ const Milestones = props => {
                         setMiles2(tmp);
                         tmp = [];
                     }
-                    if (i === 9) {
+                    if (i === 8) {
                         setMiles3(tmp);
                     }
                 }

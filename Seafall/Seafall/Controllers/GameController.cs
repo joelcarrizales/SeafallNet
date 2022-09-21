@@ -48,7 +48,7 @@ public class GameController : ControllerBase
         List<Milestone> milestones = new List<Milestone>();
         milestones.Add(new Milestone("The End is the Beginning", "Find the island at the end of the world.This will name an Emperor.", 12, "Available"));
         milestones.Add(new Milestone("Clad in Marble", "Have five structures.", 4, "Available"));
-        milestones.Add(new Milestone("Birth of an Empire", "Have three active colonies.", 4, "Available"));
+        //milestones.Add(new Milestone("Birth of an Empire", "Have three active colonies.", 4, "Available"));
         milestones.Add(new Milestone("Power of the Ancients", "Have two relics.", 3, "Available"));
         //milestones.Add(new Milestone("The Ancient Capital Razed", "Conquer the Ancient City of Ker.", 4, "Available"));
         milestones.Add(new Milestone("The Temple Falls", "Successfully raid the temple on Tortosa.", 5, "Available"));

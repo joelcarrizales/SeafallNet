@@ -1165,7 +1165,7 @@
       "status": "Hidden"
     },
     {
-      "name": "",
+      "name": "Waka Waka",
       "epithet": "Bringer of Storms",
       "ability": "When Bringer of Storms becomes your active advisor, exhaust an advisor in another province's council room. You may explore any dangerous waters space to recover a lost relic. The defense is 8 and it is dangerous. Gain glory if successful.",
       "bonus1": "Explore +3 (d)",
@@ -1216,7 +1216,7 @@
       "status": "Hidden"
     },
     {
-      "name": "",
+      "name": "Neville",
       "epithet": "Keeper of Lore",
       "ability": "When Keeper of Lore becomes your active advisor, draw the top four cards of the Research deck and keep 2.",
       "bonus1": "Upgrade -10 (g)",
